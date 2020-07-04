@@ -14,6 +14,9 @@ role: Reader of Biomechanics
 
 # Organizations/Affiliations
 organizations:
+- name: School of Sport and Exercise Science
+  url: ""
+
 - name: Liverpool John Moores University
   url: ""
 
