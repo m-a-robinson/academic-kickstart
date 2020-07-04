@@ -21,9 +21,9 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Knee Injury
-- Statistical Analysis in Biomechanics
-- Training Load Monitoring
+- Knee Injury (ACL)
+- Statistics in Biomechanics (spm1d)
+- Soccer - Training Load Monitoring
 
 education:
   courses:
@@ -69,7 +69,6 @@ user_groups:
 - Researchers
 - Visitors
 ---
+Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, Liverpool John Moores University. He teaches on the undergraduate Sport and Exercise Science and Science and Football programmes and on the MSc Sport and Clinical Biomechanics programme. Mark has been nominated by LJMU students in their Amazing Teaching Awards in the categories of "Amazing Academic Supervisor", " Amazing Teacher" and "Amazing Programme Team". He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Mark’s research interests are related to musculoskeletal loading, injury and impairment in the lower limbs but especially in  sports. Of particular interest are lower limb injuries, monitoring of training loads (UEFA Research Grant, 2014) and gait analysis. His research also includes the development of Statistical Parametric Mapping (www.spm1d.org) as a method to provide biomechanists with the appropriate statistical tools and techniques for analysing complex biomechanical data. He has run numerous workshops and seminars on spm1d around the world. He has published >50 journal articles in these areas since 2012 and has >55 verified reviews on Publons. Mark has supervised and co-supervised 9 PhD students and 1 Prof. Doc. student to completion. He has also hosted 5 ERASMUS students and three visiting researchers. He is delighted to be hosting the 2022 conference of the ISBS in Liverpool.
