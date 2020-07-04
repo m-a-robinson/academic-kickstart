@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Mark A Robinson
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,32 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Reader of Biomechanics
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Liverpool John Moores University
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Knee Injury
+- Statistical Analysis in Biomechanics
+- Training Load Monitoring
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biomechanics
+    institution: Liverpool John Moores University University
+    year: 2011
+  - course: MSc in Sport & Exercise Biomechanics
+    institution: Liverpool John Moores University University
+    year: 2004
+  - course: BSc in Sport & Exercise Science
+    institution: Liverpool John Moores University University
+    year: 2003
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,16 +44,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: '#contact'  # For a direct email link, use "mailto:m.a.robinson@ljmu.ac.uk.
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/mrobbo18
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/m-a-robinson
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
