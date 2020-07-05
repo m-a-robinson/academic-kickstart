@@ -97,7 +97,7 @@ address = {street = "Tom Reilly Building", city = "Liverpool", region = "Merseys
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "53.413469", longitude = "-2.980772"}
 
 # Directions for visitors to locate you.
 directions = "Enter the Tom Reilly Building, take the lift to level 1, I'm in office 1.04"
@@ -127,7 +127,7 @@ contact_links = [
 sharing_image = ""
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+twitter = "mrobbo18"
 
 ############################
 ## Regional Settings
