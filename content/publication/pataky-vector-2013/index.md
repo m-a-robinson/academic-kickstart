@@ -11,4 +11,3 @@ tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929013003564"
 doi: "10.1016/j.jbiomech.2013.07.031"
 ---
-

@@ -10,4 +10,3 @@ publication: "*Journal of Electromyography and Kinesiology*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1050641114002351"
 doi: "10.1016/j.jelekin.2014.10.018"
 ---
-
