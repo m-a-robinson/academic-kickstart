@@ -50,7 +50,7 @@ social:
   link: https://twitter.com/mrobbo18
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.co.uk/citations?user=sqCJJ7wAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/m-a-robinson

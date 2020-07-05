@@ -8,27 +8,49 @@ weight = 65  # Order that this section will appear.
 title = "Projects"
 subtitle = ""
 
+
+[[project.spm1d]]
+  name = "Math Methods"
+  number = "P17"
+#  photo = "P017-2021.png"
+#  website = ""
+
+[[project.acl]]
+  name = "General Physics"
+  number = "P40B"
+  session = "Win 2021"
+#  photo = "P40B-2020.png"
+  website = ""
+
+[[project.trg-load]]
+  name = "General Physics"
+  number = "P40B"
+  session = "Spr 2020"
+#  photo = "P40B-2020.png"
+#  website = "https://sites.google.com/ucr.edu/physics40b/home"
+
+
 [content]
   # Page type to display. E.g. project.
   page_type = "project"
-  
+
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
   # To show all items, set `tag` to "*".
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
-  
+
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
-  
+
   # [[content.filter_button]]
   #   name = "All"
   #   tag = "*"
-  
+
   # [[content.filter_button]]
   #   name = "Deep Learning"
   #   tag = "Deep Learning"
-  
+
   # [[content.filter_button]]
   #   name = "Other"
   #   tag = "Demo"
@@ -52,26 +74,25 @@ subtitle = ""
   #   Uncomment (by removing `#`) an option to apply it.
   #   Choose a light or dark text color by setting `text_color_light`.
   #   Any HTML color name or Hex value is valid.
-  
+
   # Background color.
   # color = "navy"
-  
+
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
-  
+
   # Background image.
   # image = "background.jpg"  # Name of image in `static/img/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
   # text_color_light = true  
-  
+
 [advanced]
- # Custom CSS. 
+ # Custom CSS.
  css_style = ""
- 
+
  # CSS class.
  css_class = ""
 +++
-
