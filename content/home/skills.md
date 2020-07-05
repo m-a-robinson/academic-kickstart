@@ -15,22 +15,35 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "laptop-code"
+  icon = "chalkboard-teacher"
   icon_pack = "fas"
-  name = "Matlab"
-#  description = "90%"
+  name = "Teaching"
 
 [[feature]]
-  icon = "code"
+  icon = "cogs"
+  icon_pack = "fas"
+  name = "Biomechanics"
+#  description = "100%"  
+
+[[feature]]
+  icon = "python"
   icon_pack = "fas"
   name = "Python"
 #  description = "100%"  
 
 [[feature]]
-  icon = "camera-retro"
+  icon = "code"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Matlab"
+#  description = "90%"
+
+[[feature]]
+  icon = "running"
+  icon_pack = "fas"
+  name = "3D Motion Analysis"
+
+
+#  description = "10%"
 
 # Uncomment to use emoji icons.
 # [[feature]]
