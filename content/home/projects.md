@@ -9,20 +9,20 @@ title = "Projects"
 subtitle = ""
 
 
-[[projects.spm1d]]
+[[content.spm1d]]
   name = "Math Methods"
   number = "P17"
 #  photo = "P017-2021.png"
 #  website = ""
 
-[[projects.acl]]
+[[content.acl]]
   name = "General Physics"
   number = "P40B"
   session = "Win 2021"
 #  photo = "P40B-2020.png"
   website = ""
 
-[[projects.trg-load]]
+[[content.trg-load]]
   name = "General Physics"
   number = "P40B"
   session = "Spr 2020"
