@@ -19,7 +19,7 @@ subtitle = ""
   #  photo = ""
   #  website = ""
 
-  [[content.Knee]]
+  [[content.filter_button]]
     name = "Knee biomechanics"
   #  photo = ""
   #  website = ""
