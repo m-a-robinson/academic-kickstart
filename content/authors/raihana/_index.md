@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Jasper Verheul
+title: Raihana Sharir
 
 # Username (this should match the folder name)
 authors:
-- jasper
+- raihana
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Post-doctoral Researcher
+role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-- name: University of Birmingham
+- name: UiTM
   url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
 
 # Short bio (displayed in user profile at end of posts)
