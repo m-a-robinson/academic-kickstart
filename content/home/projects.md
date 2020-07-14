@@ -14,26 +14,20 @@ subtitle = ""
 
   filter_default = 0
 
-
   [[content.filter_button]]
     name = "spm1d"
-  #  photo = "P017-2021.png"
+  #  photo = ""
+  #  website = ""
+
+  [[content.Knee]]
+    name = "Knee biomechanics"
+  #  photo = ""
   #  website = ""
 
   [[content.filter_button]]
-    name = "General Physics"
-    number = "P40B"
-    session = "Win 2021"
-  #  photo = "P40B-2020.png"
-    website = ""
-
-  [[content.trg-load]]
-    name = "General Physics"
-    number = "P40B"
-    session = "Spr 2020"
-  #  photo = "P40B-2020.png"
-  #  website = "https://sites.google.com/ucr.edu/physics40b/home"
-
+    name = "Training Load"
+  #  photo = ""
+  #  website = ""
 
 
   # Filter toolbar (optional).
