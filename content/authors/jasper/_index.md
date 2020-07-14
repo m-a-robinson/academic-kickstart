@@ -21,8 +21,6 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- Knee Injury (ACL)
-- Statistics in Biomechanics (spm1d)
 - Soccer - Training Load Monitoring
 
 education:

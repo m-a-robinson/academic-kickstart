@@ -70,7 +70,7 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Researchers
-- Visitors
+
 ---
 Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
