@@ -8,31 +8,37 @@ weight = 65  # Order that this section will appear.
 title = "Projects"
 subtitle = ""
 
-
-[[content.spm1d]]
-  name = "Math Methods"
-  number = "P17"
-#  photo = "P017-2021.png"
-#  website = ""
-
-[[content.acl]]
-  name = "General Physics"
-  number = "P40B"
-  session = "Win 2021"
-#  photo = "P40B-2020.png"
-  website = ""
-
-[[content.trg-load]]
-  name = "General Physics"
-  number = "P40B"
-  session = "Spr 2020"
-#  photo = "P40B-2020.png"
-#  website = "https://sites.google.com/ucr.edu/physics40b/home"
-
-
 [content]
   # Page type to display. E.g. project.
   page_type = "project"
+
+  filter_default = 0
+
+  [[content.filter_button]]
+  name = "All"
+  tag = "*
+
+  [[content.filter_button]]
+    name = "spm1d"
+    number = "P17"
+  #  photo = "P017-2021.png"
+  #  website = ""
+
+  [[content.filter_button]]
+    name = "General Physics"
+    number = "P40B"
+    session = "Win 2021"
+  #  photo = "P40B-2020.png"
+    website = ""
+
+  [[content.trg-load]]
+    name = "General Physics"
+    number = "P40B"
+    session = "Spr 2020"
+  #  photo = "P40B-2020.png"
+  #  website = "https://sites.google.com/ucr.edu/physics40b/home"
+
+
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
