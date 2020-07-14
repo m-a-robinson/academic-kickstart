@@ -9,4 +9,5 @@ featured: false
 publication: "*Journal of Sports Sciences*"
 url_pdf: "https://www.tandfonline.com/doi/full/10.1080/02640414.2016.1229015"
 doi: "10.1080/02640414.2016.1229015"
+tags: "football"
 ---
