@@ -14,13 +14,9 @@ subtitle = ""
 
   filter_default = 0
 
-  [[content.filter_button]]
-  name = "All"
-  tag = "*
 
   [[content.filter_button]]
     name = "spm1d"
-    number = "P17"
   #  photo = "P017-2021.png"
   #  website = ""
 
