@@ -17,8 +17,8 @@ height = "300px"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "Hello"
-  content = "I am center aligned 😄"
+  title = "spm1d"
+  content = "Statistical Parametric Mapping"
   align = "center"  # Choose `center`, `left`, or `right`.
 
   # Overlay a color or image (optional).
@@ -36,18 +36,18 @@ height = "300px"
   cta_icon = "graduation-cap"
 
 [[item]]
-  title = "Left"
-  content = "I am left aligned 😄"
-  align = "left"
+  title = "Knee biomechanics"
+  content = "ACL injury, sidestepping, neuromuscular"
+  align = "center"
 
   overlay_color = "#555"  # An HTML color value.
   overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
 [[item]]
-  title = "Right"
-  content = "I am right aligned 😄"
-  align = "right"
+  title = "Training Load"
+  content = "Integrating biomechanics into training load monitoring"
+  align = "center"
 
   overlay_color = "#333"  # An HTML color value.
   overlay_img = ""  # Image path relative to your `static/img/` folder.
