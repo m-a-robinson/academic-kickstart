@@ -24,7 +24,7 @@ height = "400px"
   overlay_img = "slider/spm1d.png"  # relative to `static/img/`
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "spm1d_papers"
+  cta_url = "spm1d_papers/"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 

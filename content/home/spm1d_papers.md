@@ -67,7 +67,8 @@ subtitle = ""
  css_class = ""
 +++
 
-This is the spm1d page add information in here
+This is the spm1d page add information in here.
+Workshops I've attended. Link to spm1d website. Examples, datasets?
 
 {{% alert note %}}
 Explore publications by [filtering here]({{< ref "/publication/_index.md" >}}).
