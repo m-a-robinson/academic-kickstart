@@ -8,7 +8,7 @@ weight = 65  # Order that this section will appear.
 
 # Slide interval.
 # Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
-interval = 2000
+interval = 3000
 
 # Minimum slide height.
 # Specify a height to ensure a consistent height for each slide.
@@ -21,7 +21,7 @@ height = "400px"
   content = "Statistical Parametric Mapping and waveform analysis"
   align = "center"  # Choose `center`, `left`, or `right`.
   overlay_img = "projects/spm1d.png"  # relative to `static/img/`
-  #  overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.5  # Darken the image. Value in range 0-1.
   #  cta_label = "2002.12335"
   #  cta_url = "https://arxiv.org/abs/2002.12335"
   #  cta_icon_pack = "fas"
