@@ -23,10 +23,10 @@ height = "400px"
   overlay_color = "#404040"  # An HTML color value.
   overlay_img = "slider/spm1d.png"  # relative to `static/img/`
   overlay_filter = 0.1  # Darken the image. Value in range 0-1.
-  cta_label = "2002.12335"
+  cta_label = "project details"
   cta_url = "https://arxiv.org/abs/2002.12335"
   cta_icon_pack = "fas"
-  cta_icon = "graduation-cap"
+  cta_icon = "book-reader"
 
 
 
