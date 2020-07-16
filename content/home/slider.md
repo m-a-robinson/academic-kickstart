@@ -54,6 +54,15 @@ height = "400px"
   overlay_color = "#555"  # An HTML color value.
   overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+  overlay_color = "#404040"  # An HTML color value.
+  overlay_img = "slider/knee.png"  # relative to `static/img/`
+  overlay_filter = 0.1  # Darken the image. Value in range 0-1.
+  cta_label = "project details"
+  cta_url = "https://arxiv.org/abs/2002.12335"
+  cta_icon_pack = "fas"
+  cta_icon = "book-reader"
+
+
 
 [[item]]
   title = "Training Load"
