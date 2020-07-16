@@ -50,12 +50,12 @@ height = "400px"
 
 
 [[item]]
-  title = "Training Load"
+  title = "training load"
   content = "Integrating biomechanics into training load monitoring"
   align = "center"
   overlay_color = "#404040"  # An HTML color value.
   overlay_img = "slider/grf_predict.png"  # relative to `static/img/` folder.
-  overlay_filter = 0.1  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
   cta_label = "project details"
   cta_url = "https://arxiv.org/abs/2002.12335"
   cta_icon_pack = "fas"
