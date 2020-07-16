@@ -28,7 +28,6 @@ height = "400px"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
-
   # Call to action button (optional).
   #   Activate the button by specifying a URL and button label below.
   #   Deactivate by commenting out parameters, prefixing lines with `#`.
@@ -38,11 +37,11 @@ height = "400px"
   #cta_icon = "graduation-cap"
 
 [[item]]
-  title = "Knee biomechanics"
-  content = "ACL injury, sidestepping, neuromuscular"
+  title = "knee biomechanics"
+  content = "ACL injury, sidestepping, neuromuscular risk factors"
   align = "center"
   overlay_color = "#404040"  # An HTML color value.
-  overlay_img = "slider/running_tr.png"  # relative to `static/img/` folder.
+  overlay_img = "slider/knee.png"  # relative to `static/img/` folder.
   overlay_filter = 0.1  # Darken the image. Value in range 0-1.
   cta_label = "project details"
   cta_url = "https://arxiv.org/abs/2002.12335"
@@ -54,9 +53,13 @@ height = "400px"
   title = "Training Load"
   content = "Integrating biomechanics into training load monitoring"
   align = "center"
-
-  overlay_color = "#333"  # An HTML color value.
-  overlay_img = ""  # Image path relative to your `static/img/` folder.
+  overlay_color = "#404040"  # An HTML color value.
+  overlay_img = "slider/grf_predict.png"  # relative to `static/img/` folder.
   overlay_filter = 0.1  # Darken the image. Value in range 0-1.
+  cta_label = "project details"
+  cta_url = "https://arxiv.org/abs/2002.12335"
+  cta_icon_pack = "fas"
+  cta_icon = "book-reader"
+
 
 +++
