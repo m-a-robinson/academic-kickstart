@@ -15,7 +15,7 @@ subtitle = ""
   page_type = "publication"
 
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 4
 
   # Choose how many pages you would like to offset by
   offset = 0
@@ -71,5 +71,5 @@ This is the spm1d page add information in here.
 Workshops I've attended. Link to spm1d website. Examples, datasets?
 
 {{% alert note %}}
-Explore publications by [filtering here]({{< ref "/publication/_index.md" >}}).
+Explore all training load publications [here]({{< ref "/publication/_index.md" >}}).
 {{% /alert %}}

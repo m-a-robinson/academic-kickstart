@@ -71,5 +71,5 @@ This is the spm1d page add information in here.
 Workshops I've attended. Link to spm1d website. Examples, datasets?
 
 {{% alert note %}}
-Explore publications by [filtering here]({{< ref "/publication/_index.md" >}}).
+Explore all spm1d publications [here]({{< ref "/publication/_index.md" >}}).
 {{% /alert %}}
