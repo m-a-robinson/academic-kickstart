@@ -40,19 +40,13 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:m.a.robinson@ljmu.ac.uk.
+  "j.p.verheul@bham.ac.uk"
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/mrobbo18
+  link: https://twitter.com/jasper_verheul
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sqCJJ7wAAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/m-a-robinson
-- icon: publons
-  icon_pack: ai
-  link: https://publons.com/researcher/1182276/mark-a-robinson/
+  link: https://scholar.google.com/citations?user=V2lFxhwAAAAJ&hl=en
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
