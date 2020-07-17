@@ -73,12 +73,12 @@ user_groups:
 
 ---
 
-Mark's research applies innovative methods and perspectives to problems in knee injury, training load monitoring and biomechanics. Through the integration of Statistical Parametric Mapping into biomechanics (see www.spm1d.org) he has been challenging conventional biomechanical data analysis and experimentation.
+Mark's research applies innovative methods and perspectives to problems in knee injury, training load monitoring and biomechanics. Through the integration of Statistical Parametric Mapping into biomechanics (see www.spm1d.org) he challenges conventional biomechanical data analysis and experimentation.
 
-- >55 journal articles
-- >55 verified Publons reviews
-- Supervised and co-supervised 9 PhD students and 1 Prof. Doc. student to completion
-- Associate Editor for the Journal of Sports Sciences
+> 55 journal articles
+> 55 verified Publons reviews
+> 9 PhD and 1 Prof. Doc. completion
+> Associate Editor for the Journal of Sports Sciences
 
 <!-- # Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
