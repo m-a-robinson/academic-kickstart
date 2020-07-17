@@ -75,8 +75,7 @@ user_groups:
 
 Mark's research applies innovative methods and perspectives to problems in knee injury, training load monitoring and biomechanics. Through the integration of Statistical Parametric Mapping into biomechanics (see www.spm1d.org) he challenges conventional biomechanical data analysis and experimentation.
 
-> 55 journal articles
-> 55 verified Publons reviews
+> 55 journal articles & 55 verified Publons reviews
 > 9 PhD and 1 Prof. Doc. completion
 > Associate Editor for the Journal of Sports Sciences
 
