@@ -71,5 +71,6 @@ This is the knee page add information in here.
 
 
 {{% alert note %}}
-Explore all knee publications [here]({{< ref "/publication/_index.md" >}}).
+# Explore all knee publications [here]({{< ref "/publication/_index.md" >}}).
+Explore all knee publications [here]({{< ref "/tag/knee/" >}}).
 {{% /alert %}}
