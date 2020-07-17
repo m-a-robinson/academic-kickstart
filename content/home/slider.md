@@ -24,7 +24,7 @@ height = "400px"
   overlay_img = "slider/spm1d.png"  # relative to `static/img/`
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "#spm1d_papers"
+  cta_url = "#papers_spm1d"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
@@ -44,7 +44,7 @@ height = "400px"
   overlay_img = "slider/knee.png"  # relative to `static/img/` folder.
   overlay_filter = 0.1  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "https://arxiv.org/abs/2002.12335"
+  cta_url = "#papers_knee"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
@@ -57,7 +57,7 @@ height = "400px"
   overlay_img = "slider/grf_predict.png"  # relative to `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "https://arxiv.org/abs/2002.12335"
+  cta_url = "#papers_training"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 

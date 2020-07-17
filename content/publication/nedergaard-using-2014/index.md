@@ -9,5 +9,5 @@ featured: false
 publication: "*Journal of Sports Sciences*"
 url_pdf: "http://www.tandfonline.com/doi/abs/10.1080/02640414.2014.965190"
 doi: "10.1080/02640414.2014.965190"
+tags: "Training Load"
 ---
-

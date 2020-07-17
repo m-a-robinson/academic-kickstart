@@ -9,5 +9,5 @@ featured: false
 publication: "*PeerJ*"
 url_pdf: "https://peerj.com/articles/6105"
 doi: "10.7717/peerj.6105"
+tags: "Training Load"
 ---
-

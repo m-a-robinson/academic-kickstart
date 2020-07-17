@@ -9,5 +9,5 @@ featured: false
 publication: "*arXiv:1903.07221 [cs]*"
 tags: ["Computer Science - Computer Vision and Pattern Recognition"]
 url_pdf: "http://arxiv.org/abs/1903.07221"
+tags: "Training Load"
 ---
-
