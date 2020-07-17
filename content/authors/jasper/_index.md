@@ -40,7 +40,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  "j.p.verheul@bham.ac.uk"
+  "mailto:j.p.verheul@bham.ac.uk"
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/jasper_verheul
