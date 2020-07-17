@@ -9,5 +9,5 @@ featured: false
 publication: "*Journal of Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929012002862"
 doi: "10.1016/j.jbiomech.2012.05.017"
+tags: "Knee"
 ---
-

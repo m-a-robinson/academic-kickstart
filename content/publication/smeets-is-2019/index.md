@@ -9,5 +9,5 @@ featured: false
 publication: "*The Knee*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0968016018309037"
 doi: "10.1016/j.knee.2018.10.006"
+tags: "Knee"
 ---
-

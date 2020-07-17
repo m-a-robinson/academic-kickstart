@@ -9,5 +9,5 @@ featured: false
 publication: "*Physical Therapy in Sport*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1466853X16300451"
 doi: "10.1016/j.ptsp.2016.06.004"
+tags: "Knee"
 ---
-

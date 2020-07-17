@@ -9,5 +9,5 @@ featured: false
 publication: "*PLOS ONE*"
 url_pdf: "https://dx.plos.org/10.1371/journal.pone.0133147"
 doi: "10.1371/journal.pone.0133147"
+tags: "Knee"
 ---
-

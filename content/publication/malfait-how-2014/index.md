@@ -9,5 +9,5 @@ featured: false
 publication: "*Medicine & Science in Sports & Exercise*"
 url_pdf: "http://journals.lww.com/00005768-201404000-00005"
 doi: "10.1249/MSS.0000000000000170"
+tags: "Knee"
 ---
-
