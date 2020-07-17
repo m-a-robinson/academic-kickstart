@@ -67,8 +67,7 @@ subtitle = ""
  css_class = ""
 +++
 
-This is the spm1d page add information in here.
-Workshops I've attended. Link to spm1d website. Examples, datasets?
+This is the training load page 
 
 {{% alert note %}}
 Explore all training load publications [here]({{< ref "/publication/_index.md" >}}).
