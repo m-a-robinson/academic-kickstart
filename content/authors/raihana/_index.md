@@ -21,7 +21,7 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- Soccer - Training Load Monitoring
+- PhD - A critical evaluation of biomechanical risk factors for ACL injuries during dynamic activities
 
 education:
   courses:

@@ -21,7 +21,7 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- Soccer - Training Load Monitoring
+- PhD - Whole body biomechanical load monitoring from accelerometry in team sports
 
 education:
   courses:

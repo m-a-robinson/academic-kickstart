@@ -21,7 +21,7 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- Soccer - Training Load Monitoring
+- PhD - The role of biomechanical markers of dynamic stability in the execution of highly dynamic tasks
 
 education:
   courses:
