@@ -10,4 +10,5 @@ publication: "*Journal of Science and Medicine in Sport*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1440244018303529"
 doi: "10.1016/j.jsams.2018.12.007"
 tags: "Training Load"
+projects: [training_load]
 ---

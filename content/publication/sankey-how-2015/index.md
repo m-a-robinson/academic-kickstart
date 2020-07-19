@@ -10,4 +10,9 @@ publication: "*Gait & Posture*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0966636215000831"
 doi: "10.1016/j.gaitpost.2015.03.014"
 tags: "Knee"
+- Training Load
+- Ground Reaction Forces
+- Accelerometry
+- Sensors
+projects: [knee]
 ---

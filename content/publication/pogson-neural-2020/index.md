@@ -9,5 +9,12 @@ featured: false
 publication: "*Medical Engineering & Physics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S135045332030028X"
 doi: "10.1016/j.medengphy.2020.02.002"
-tags: "Training Load"
+tags:
+  - Training Load
+  - Machine learning
+  - Ground Reaction Forces
+  - Accelerometry
+  - Sensors
+
+projects: [training_load]
 ---

@@ -10,4 +10,5 @@ publication: "*Sports Medicine*"
 url_pdf: "http://link.springer.com/10.1007/s40279-017-0714-2"
 doi: "10.1007/s40279-017-0714-2"
 tags: "Training Load"
+projects: [training_load]
 ---

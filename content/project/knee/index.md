@@ -1,6 +1,6 @@
 ---
-title: spm1d & waveform analysis
-subtitle: Studying phonon transport at nanoscale
+title: Knee biomechanics
+subtitle: ACL injury, biomechanical and neuromuscular risk factors
 date: 2020-07-08T15:43:18.797Z
 summary: Investigating phonon transport in phononic crystals, nanowires, and membranes.
 draft: false

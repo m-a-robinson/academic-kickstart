@@ -9,5 +9,7 @@ featured: false
 publication: "*Journal of Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929018308388"
 doi: "10.1016/j.jbiomech.2018.11.007"
+tags:
+  - Methods
+  - Inverse Kinematics
 ---
-

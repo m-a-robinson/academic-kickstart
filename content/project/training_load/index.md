@@ -1,6 +1,6 @@
 ---
-title: spm1d & waveform analysis
-subtitle: Studying phonon transport at nanoscale
+title: Training Load Monitoring
+subtitle: Using biomechanics to understand and monitor athlete training
 date: 2020-07-08T15:43:18.797Z
 summary: Investigating phonon transport in phononic crystals, nanowires, and membranes.
 draft: false

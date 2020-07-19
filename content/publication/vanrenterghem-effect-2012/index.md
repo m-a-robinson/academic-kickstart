@@ -10,4 +10,5 @@ publication: "*Journal of Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929012003922"
 doi: "10.1016/j.jbiomech.2012.06.029"
 tags: "Knee"
+projects: [knee]
 ---
