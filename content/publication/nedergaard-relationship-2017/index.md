@@ -9,9 +9,9 @@ featured: false
 publication: "*International Journal of Sports Physiology and Performance*"
 url_pdf: "https://journals.humankinetics.com/view/journals/ijspp/12/1/article-p18.xml"
 doi: "10.1123/ijspp.2015-0712"
-- Training Load
-- Accelerometry
-- Sensors
-
+tags:
+  - Training Load
+  - Accelerometry
+  - Sensors
 projects: [training_load]
 ---
