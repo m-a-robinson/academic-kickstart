@@ -17,5 +17,12 @@ image:
   filename: ""
 #  focal_point: Smart
   preview_only: false
+[design]
+    # Toggle between the various page layout types.
+    #   1 = List
+    #   2 = Compact
+    #   3 = Card
+    #   4 = Citation (publication only)
+    view = 4
 ---
 The goal of the project is to study the propagation of phonons at nanoscales where the average distance between the boundaries of the materials is comparable or less than the mean free path of phonons, usually referred to as ballistic regime. It can be achieved by using phononic crystals, nanowires, and thin membranes. Ballistic phonons are extremely interesting as they can result in a completely new thermal behavior of materials and boost their thermal or thermoelectric properties. Such properties can help to develop more energy-efficient electronics and to extract heat from nanosized objects.
