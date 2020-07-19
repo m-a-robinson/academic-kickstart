@@ -10,5 +10,11 @@ publication: "*Journal of Biomechanics*"
 tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929017305043"
 doi: "10.1016/j.jbiomech.2017.09.031"
----
 
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: [spm1d]
+---

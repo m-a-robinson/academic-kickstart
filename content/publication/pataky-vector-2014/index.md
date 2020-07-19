@@ -10,5 +10,5 @@ publication: "*Gait & Posture*"
 tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0966636214000630"
 doi: "10.1016/j.gaitpost.2014.01.023"
+projects: [spm1d]
 ---
-

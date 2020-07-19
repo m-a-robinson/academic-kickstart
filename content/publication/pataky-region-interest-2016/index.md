@@ -10,5 +10,5 @@ publication: "*PeerJ*"
 tags: ["spm"]
 url_pdf: "https://peerj.com/articles/2652"
 doi: "10.7717/peerj.2652"
+projects: [spm1d]
 ---
-

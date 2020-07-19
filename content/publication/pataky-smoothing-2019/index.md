@@ -9,5 +9,5 @@ featured: false
 publication: "*Journal of Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929018308339"
 doi: "10.1016/j.jbiomech.2018.11.002"
+projects: [spm1d]
 ---
-

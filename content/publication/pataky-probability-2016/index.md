@@ -10,5 +10,5 @@ publication: "*Journal of Biomechanics*"
 tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929016303517"
 doi: "10.1016/j.jbiomech.2016.03.032"
+projects: [spm1d]
 ---
-
