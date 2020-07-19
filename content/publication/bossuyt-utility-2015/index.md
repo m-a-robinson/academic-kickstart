@@ -10,4 +10,5 @@ publication: "*International Journal of Sports Medicine*"
 url_pdf: "http://www.thieme-connect.de/DOI/DOI?10.1055/s-0035-1555930"
 doi: "10.1055/s-0035-1555930"
 tags: "Knee"
+projects: [knee]
 ---
