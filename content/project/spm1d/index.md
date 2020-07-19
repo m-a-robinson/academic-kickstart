@@ -8,6 +8,9 @@ featured: false
 authors: ""
 tags:
   - spm
+  - knee
+  - football
+  - Training Load
 
 external_link: ""
 image:
