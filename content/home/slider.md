@@ -2,7 +2,7 @@
 widget = "slider"  # Use the Slider widget
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 65  # Order that this section will appear.
+weight = 40  # Order that this section will appear.
 
 # ... Put Your Section Options Here (section position etc.) ...
 

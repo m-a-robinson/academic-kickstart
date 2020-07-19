@@ -4,7 +4,7 @@
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 70 # Order that this section will appear.
 
 title = "Knee biomechanics"
@@ -67,7 +67,7 @@ subtitle = ""
  css_class = ""
 +++
 
-Mark's research has addressed aspects of biomechanical modelling that is relevant in the assessment of Anterior Cruciate Ligament injury risk during dynamic sports (e.g. knee axes, centre of mass representation, reliability, direct vs. inverse kinematics). He has focussed his research on biomechanical and neuromuscular risk factors and challenging traditional use and interpretation of these. He has consulted for elite football teams to support the integration of biomechanical analysis into applied practice and conducted many return to play assessments for elite players. 
+Mark's research has addressed aspects of biomechanical modelling that is relevant in the assessment of Anterior Cruciate Ligament injury risk during dynamic sports (e.g. knee axes, centre of mass representation, reliability, direct vs. inverse kinematics). He has focussed his research on biomechanical and neuromuscular risk factors and challenging traditional use and interpretation of these. He has consulted for elite football teams to support the integration of biomechanical analysis into applied practice and conducted many return to play assessments for elite players.
 
 
 {{% alert note %}}
