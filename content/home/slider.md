@@ -44,7 +44,7 @@ height = "400px"
   overlay_img = "slider/knee.png"  # relative to `static/img/` folder.
   overlay_filter = 0.1  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "#papers_knee"
+  cta_url = "/project/knee/"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
@@ -57,7 +57,7 @@ height = "400px"
   overlay_img = "slider/grf_predict.png"  # relative to `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
   cta_label = "project details"
-  cta_url = "#papers_training"
+  cta_url = "/project/training_load/"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
