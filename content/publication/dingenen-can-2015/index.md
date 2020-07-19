@@ -10,4 +10,7 @@ publication: "*The Knee*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0968016014002890"
 doi: "10.1016/j.knee.2014.12.006"
 tags: "Knee"
+projects:
+  - knee
+  - spm1d
 ---
