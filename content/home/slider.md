@@ -61,5 +61,16 @@ height = "400px"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
-
+[[item]]
+  title = "methods"
+  content = "development and evaluation of biomechanical tools"
+  align = "center"  # Choose `center`, `left`, or `right`.
+  overlay_color = "#404040"  # An HTML color value. Optional
+  overlay_img = "slider/methods.png"  # relative to `static/img/`
+  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
+  cta_label = "project details"
+  cta_url = "/project/methods/"
+  cta_icon_pack = "fas"
+  cta_icon = "book-reader"
+  
 +++
