@@ -6,8 +6,7 @@ summary: Investigating phonon transport in phononic crystals, nanowires, and mem
 draft: false
 featured: false
 authors: ""
-tags: "*"
-
+tags: ""
 external_link: ""
 image:
   filename: ""
