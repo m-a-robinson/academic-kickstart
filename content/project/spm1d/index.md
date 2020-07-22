@@ -6,11 +6,7 @@ summary: Investigating phonon transport in phononic crystals, nanowires, and mem
 draft: false
 featured: false
 authors: ""
-#tags:
-#  - spm
-#  - knee
-#  - football
-#  - Training Load
+tags: "*"
 
 external_link: ""
 image:
