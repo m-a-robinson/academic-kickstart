@@ -9,5 +9,8 @@ featured: false
 publication: "*Experimental Brain Research*"
 url_pdf: "http://link.springer.com/10.1007/s00221-010-2400-6"
 doi: "10.1007/s00221-010-2400-6"
+projects: [clinical]
+tags:
+  - Reaching
+  - Tetraplegia
 ---
-

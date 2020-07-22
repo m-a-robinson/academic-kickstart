@@ -11,4 +11,6 @@ tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929015001438"
 doi: "10.1016/j.jbiomech.2015.02.051"
 projects: [spm1d]
+tags:
+  - SPM
 ---

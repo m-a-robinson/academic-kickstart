@@ -9,5 +9,7 @@ featured: false
 publication: "*Medicine & Science in Sports & Exercise*"
 url_pdf: "http://journals.lww.com/00005768-201506000-00016"
 doi: "10.1249/MSS.0000000000000525"
+projects: [clinical]
+tags:
+  - Ankle instability
 ---
-

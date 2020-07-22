@@ -9,5 +9,8 @@ featured: false
 publication: "*Spinal Cord*"
 url_pdf: "http://www.nature.com/articles/sc2009193"
 doi: "10.1038/sc.2009.193"
+projects: [clinical]
+tags:
+  - Reaching
+  - Tetraplegia
 ---
-

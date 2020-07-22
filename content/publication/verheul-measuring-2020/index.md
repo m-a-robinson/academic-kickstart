@@ -9,6 +9,8 @@ featured: false
 publication: "*Science and Medicine in Football*"
 url_pdf: "https://www.tandfonline.com/doi/full/10.1080/24733938.2019.1709654"
 doi: "10.1080/24733938.2019.1709654"
-tags: "Training Load"
+tags:
+  - Training Load
+  - Sensors
 projects: [training_load]
 ---

@@ -12,5 +12,7 @@ doi: "10.1080/02640410903540352"
 tags:
   - Football
   - Methods
+  - Biomechanical models
+projects: [methods]
 
 ---

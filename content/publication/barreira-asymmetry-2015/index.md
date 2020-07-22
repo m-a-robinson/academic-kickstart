@@ -9,7 +9,9 @@ featured: false
 publication: "*International Journal of Sports Medicine*"
 url_pdf: "http://www.thieme-connect.de/DOI/DOI?10.1055/s-0034-1398493"
 doi: "10.1055/s-0034-1398493"
+projects: [training_load]
 tags:
   - Football
   - Injury
+  - Hamstrings
 ---

@@ -9,5 +9,9 @@ featured: false
 publication: "*Gait & Posture*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0966636210000676"
 doi: "10.1016/j.gaitpost.2010.02.014"
-tags: "Knee"
+tags:
+  - Biomechanical models
+  - Sidestepping
+projects:
+  - methods
 ---

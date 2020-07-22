@@ -9,5 +9,9 @@ featured: false
 publication: "*Medicine & Science in Sports & Exercise*"
 url_pdf: "http://journals.lww.com/00005768-201311000-00014"
 doi: "10.1249/MSS.0b013e31829991a2"
+projects: [clinical]
+tags:
+  - Gait
+  - Ankle instability
+  - Biomechanical models
 ---
-

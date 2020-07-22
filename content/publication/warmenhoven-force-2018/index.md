@@ -9,5 +9,8 @@ featured: false
 publication: "*Journal of Science and Medicine in Sport*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1440244018300914"
 doi: "10.1016/j.jsams.2018.03.009"
+projects: [spm1d]
+tags:
+  - SPM
+  - FDA
 ---
-

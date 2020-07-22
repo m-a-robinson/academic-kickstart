@@ -9,5 +9,7 @@ featured: false
 publication: "*Ergonomics*"
 url_pdf: "https://www.tandfonline.com/doi/full/10.1080/00140130500101338"
 doi: "10.1080/00140130500101338"
+tags:
+  - Fatigue
+  - EMG
 ---
-

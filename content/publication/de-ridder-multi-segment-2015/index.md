@@ -9,5 +9,7 @@ featured: false
 publication: "*Clinical Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0268003315001060"
 doi: "10.1016/j.clinbiomech.2015.04.001"
+projects: [clinical]
+tags:
+  - Ankle instability
 ---
-

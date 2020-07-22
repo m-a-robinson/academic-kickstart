@@ -9,5 +9,9 @@ featured: false
 publication: "*Applied Ergonomics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0003687019300821"
 doi: "10.1016/j.apergo.2019.05.003"
+tags:
+  - SPM
+  - Gait
+projects:
+  - clinical
 ---
-

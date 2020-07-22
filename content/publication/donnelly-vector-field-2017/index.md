@@ -10,6 +10,9 @@ publication: "*Clinical Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0268003316302200"
 doi: "10.1016/j.clinbiomech.2016.11.008"
 tags:
+  - SPM
+  - Gait
+projects:
+  - SPM1D
   - clinical
-projects: [spm1d]
 ---

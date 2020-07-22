@@ -9,5 +9,8 @@ featured: false
 publication: "*Journal of NeuroEngineering and Rehabilitation*"
 url_pdf: "http://jneuroengrehab.biomedcentral.com/articles/10.1186/1743-0003-11-101"
 doi: "10.1186/1743-0003-11-101"
+projects: [clinical]
+tags:
+  - Biofeedback
+  - Gait
 ---
-

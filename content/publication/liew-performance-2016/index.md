@@ -9,5 +9,9 @@ featured: false
 publication: "*Journal of Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929016305772"
 doi: "10.1016/j.jbiomech.2016.05.010"
----
+projects: [methods]
+tags:
+  - Methods
+  - Biomechanical models
 
+---

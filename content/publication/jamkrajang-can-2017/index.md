@@ -9,5 +9,7 @@ featured: false
 publication: "*Gait & Posture*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0966636217301698"
 doi: "10.1016/j.gaitpost.2017.04.036"
+projects: [methods]
+tags:
+  - Biomechanical models
 ---
-

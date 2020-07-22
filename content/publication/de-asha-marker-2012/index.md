@@ -11,4 +11,8 @@ url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0966636212001440"
 doi: "10.1016/j.gaitpost.2012.04.016"
 tags:
   - Methods
+  - Gait
+projects: [methods]
+
+
 ---

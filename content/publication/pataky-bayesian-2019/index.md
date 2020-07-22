@@ -12,4 +12,8 @@ doi: "10.1016/j.jbiomech.2018.11.007"
 tags:
   - Methods
   - Inverse Kinematics
+  - Bayesian
+  - Simulation
+projects:
+    - methods
 ---

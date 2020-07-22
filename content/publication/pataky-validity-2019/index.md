@@ -11,4 +11,7 @@ tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0021929019303501"
 doi: "10.1016/j.jbiomech.2019.05.018"
 projects: [spm1d]
+tags:
+  - SPM
+  - Simulation
 ---

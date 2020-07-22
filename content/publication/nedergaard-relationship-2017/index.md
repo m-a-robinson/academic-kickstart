@@ -13,5 +13,6 @@ tags:
   - Training Load
   - Accelerometry
   - Sensors
+  - SPM
 projects: [training_load]
 ---

@@ -9,5 +9,6 @@ featured: false
 publication: "*PeerJ*"
 url_pdf: "https://peerj.com/articles/4399"
 doi: "10.7717/peerj.4399"
+tags:
+  - SPM
 ---
-

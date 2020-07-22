@@ -11,4 +11,8 @@ tags: ["spm"]
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1050641114002351"
 doi: "10.1016/j.jelekin.2014.10.018"
 projects: [spm1d]
+projects: [clinical]
+tags:
+  - EMG
+  - SPM
 ---

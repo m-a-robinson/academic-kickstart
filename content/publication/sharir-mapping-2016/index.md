@@ -9,6 +9,8 @@ featured: false
 publication: "*Clinical Biomechanics*"
 url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S0268003316300882"
 doi: "10.1016/j.clinbiomech.2016.05.017"
-tags: "Knee"
-projects: [knee]
+tags:
+  - ACL
+projects:
+  - knee
 ---

@@ -9,6 +9,8 @@ featured: false
 publication: "*Sports Biomechanics*"
 url_pdf: "https://www.tandfonline.com/doi/full/10.1080/14763141.2019.1584238"
 doi: "10.1080/14763141.2019.1584238"
-tags: "Training Load"
 projects: [training_load]
+tags:
+  - Ground Reaction Forces
+  - Accelerometry
 ---
