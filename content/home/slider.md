@@ -76,7 +76,7 @@ height = "400px"
 
 
 [[item]]
-  title = "clincal"
+  title = "clinical"
   content = "studies with clinical populations or applications"
   align = "center"  # Choose `center`, `left`, or `right`.
   overlay_color = "#404040"  # An HTML color value. Optional
