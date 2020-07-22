@@ -21,7 +21,7 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- "PhD - Biomechanical loads in running-based sports: Estimating ground reaction forces from segemental accelerations"
+- PhD - Biomechanical loads in running-based sports. Estimating ground reaction forces from segemental accelerations
 
 education:
   courses:

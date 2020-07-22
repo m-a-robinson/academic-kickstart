@@ -61,6 +61,7 @@ height = "400px"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
 
+
 [[item]]
   title = "methods"
   content = "development and evaluation of biomechanical tools"
@@ -72,5 +73,18 @@ height = "400px"
   cta_url = "/project/methods/"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"
-  
+
+
+  [[item]]
+    title = "clincal"
+    content = "studies with clinical populations or applications"
+    align = "center"  # Choose `center`, `left`, or `right`.
+    overlay_color = "#404040"  # An HTML color value. Optional
+    overlay_img = "slider/clincal.png"  # relative to `static/img/`
+    overlay_filter = 0.4  # Darken the image. Value in range 0-1.
+    cta_label = "project details"
+    cta_url = "/project/clinical/"
+    cta_icon_pack = "fas"
+    cta_icon = "book-reader"  
+    
 +++
