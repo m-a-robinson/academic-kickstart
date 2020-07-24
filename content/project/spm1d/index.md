@@ -4,7 +4,7 @@ subtitle: Studying phonon transport at nanoscale
 date: 2020-07-08T15:43:18.797Z
 summary: Investigating phonon transport in phononic crystals, nanowires, and membranes.
 draft: false
-featured: true
+featured: false
 authors: ""
 tags: ""
 external_link: ""

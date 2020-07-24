@@ -72,10 +72,10 @@ user_groups:
 - Lead Researcher
 
 ---
+Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and postgraduate biomechanics courses and has been programme leader of BSc (Hons) Sport and Exercise Science for five years.
 
-Mark applies innovative methods and perspectives to problems in biomechanics. He challenges conventional biomechanical data analysis and experimentation through waveform analysis.
+His research applies innovative methods and perspectives to problems in biomechanics. His research fits broadly into the themes of knee injury, football and research methods in biomechanics. He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and had award winning PhD students exploring the use of accelerometry for training load monitoring. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 
-Mark’s research applies innovative methods and perspectives to problems in knee injury, training load monitoring and biomechanics. Through the integration of Statistical Parametric Mapping into biomechanics (see www.spm1d.org) he challenges conventional biomechanical data analysis and experimentation.
 
 > 55 journal articles & 55 verified Publons reviews
 >
