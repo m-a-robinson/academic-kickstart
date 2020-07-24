@@ -1,6 +1,6 @@
 ---
-title: spm1d & waveform analysis
-subtitle: Studying phonon transport at nanoscale
+title: Re-imagining biomechanical data analysis
+subtitle: spm1d, waveform (1D) analysis and statistics
 date: 2020-07-08T15:43:18.797Z
 summary: Investigating phonon transport in phononic crystals, nanowires, and membranes.
 draft: false
@@ -14,4 +14,9 @@ image:
   preview_only: false
 
 ---
-The goal of the project is to study the propagation of phonons at nanoscales where the average distance between the boundaries of the materials is comparable or less than the mean free path of phonons, usually referred to as ballistic regime. It can be achieved by using phononic crystals, nanowires, and thin membranes. Ballistic phonons are extremely interesting as they can result in a completely new thermal behavior of materials and boost their thermal or thermoelectric properties. Such properties can help to develop more energy-efficient electronics and to extract heat from nanosized objects.
+Key collaborators:
+A. Prof. Todd Pataky - Kyoto University, Japan
+A. Prof. Jos Vanrenterghem - KU Leuven, Belgium
+
+This research theme primarily focuses on the integration of statistical parametric mapping into biomechanics through the use of spm1d (www.spm1d.org). Arguably the most influential paper is Pataky et al. (2013) which introduces vector-field analysis (multivariate statistical analysis of waveforms). Other technical spm1d papers address issues including non-parametric inference, regions-of-interest, homogeneity, two-way ANOVA.
+Other research has addressed biomechanical data analysis more broadly by demonstrating the likihood of false postives with 0D data analysis and 1D power analysis. This work has also branched into complementary methods including Functional Data Analysis and Principal Component Analysis. 
