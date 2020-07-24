@@ -20,12 +20,12 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Dedicated teacher, researcher and mentor. Work in progress.
 
-<!-- interests:
+interests:
 - Knee Injury (ACL)
 - Statistics in Biomechanics (spm1d)
-- Soccer - Training Load Monitoring -->
+- Soccer - Training Load Monitoring
 
-<!-- education:
+education:
   courses:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
@@ -35,7 +35,7 @@ bio: Dedicated teacher, researcher and mentor. Work in progress.
     year: 2004
   - course: BSc in Sport & Exercise Science
     institution: Liverpool John Moores University University
-    year: 2003 -->
+    year: 2003
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -72,9 +72,7 @@ user_groups:
 - Lead Researcher
 
 ---
-Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and postgraduate biomechanics courses and has been programme leader of BSc (Hons) Sport and Exercise Science for five years.
-
-His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. His research fits broadly into the themes of knee injury, soccer, wearable sensors and research methods in biomechanics.
+Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and postgraduate biomechanics courses and has been programme leader of BSc (Hons) Sport and Exercise Science for five years. His research applies innovative methods and perspectives to problems in sport and clinical biomechanics.
 
 He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and had award winning PhD students exploring the use of accelerometry for training load monitoring. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 
