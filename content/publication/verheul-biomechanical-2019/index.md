@@ -13,4 +13,6 @@ projects: [training_load]
 tags:
   - Ground Reaction Forces
   - Accelerometry
+  - Training load
+  - Sensors
 ---

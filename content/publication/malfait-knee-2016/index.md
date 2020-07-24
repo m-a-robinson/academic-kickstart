@@ -16,5 +16,4 @@ tags:
   - EMG
 projects:
   - knee
-  - methods
 ---

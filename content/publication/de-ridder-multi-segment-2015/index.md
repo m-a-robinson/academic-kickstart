@@ -12,4 +12,5 @@ doi: "10.1016/j.clinbiomech.2015.04.001"
 projects: [clinical]
 tags:
   - Ankle instability
+  - Biomechanical models
 ---

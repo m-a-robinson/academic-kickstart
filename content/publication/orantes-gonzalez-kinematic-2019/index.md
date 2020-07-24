@@ -12,6 +12,4 @@ doi: "10.1016/j.apergo.2019.05.003"
 tags:
   - SPM
   - Gait
-projects:
-  - clinical
 ---
