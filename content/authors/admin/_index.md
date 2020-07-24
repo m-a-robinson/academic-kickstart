@@ -18,14 +18,14 @@ organizations:
   url: "https://www.ljmu.ac.uk/about-us/faculties/faculty-of-science/school-of-sport-and-exercise-sciences"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Dedicated teacher, researcher and mentor. Work in progress.
 
-interests:
+<!-- interests:
 - Knee Injury (ACL)
 - Statistics in Biomechanics (spm1d)
-- Soccer - Training Load Monitoring
+- Soccer - Training Load Monitoring -->
 
-education:
+<!-- education:
   courses:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
@@ -35,7 +35,7 @@ education:
     year: 2004
   - course: BSc in Sport & Exercise Science
     institution: Liverpool John Moores University University
-    year: 2003
+    year: 2003 -->
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -76,12 +76,6 @@ Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and
 
 His research applies innovative methods and perspectives to problems in biomechanics. His research fits broadly into the themes of knee injury, football and research methods in biomechanics. He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and had award winning PhD students exploring the use of accelerometry for training load monitoring. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 
-
-> 55 journal articles & 55 verified Publons reviews
->
-> 9 PhD and 1 Prof. Doc. completion
->
-> Associate Editor for the Journal of Sports Sciences
 
 <!-- # Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
