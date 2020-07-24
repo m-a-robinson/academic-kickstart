@@ -74,11 +74,11 @@ user_groups:
 ---
 Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and postgraduate biomechanics courses and has been programme leader of BSc (Hons) Sport and Exercise Science for five years.
 
-His research applies innovative methods and perspectives to problems in biomechanics. His research fits broadly into the themes of knee injury, football and research methods in biomechanics.
+His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. His research fits broadly into the themes of knee injury, football and research methods in biomechanics.
 
 He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and had award winning PhD students exploring the use of accelerometry for training load monitoring. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 
-
+Click on the @icn-camera icon to take a screen shot.
 <!-- # Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
 # Mark’s research relates to knee injuries in sports, training load sensors, and clinical biomechanics. His research also includes the development of 1D Statistical Parametric Mapping (www.spm1d.org) for analysing complex biomechanical data. He has run numerous workshops and seminars on spm1d around the world. He has published >55 journal articles in these areas since 2012 and has >55 verified reviews on Publons. Mark has supervised and co-supervised 9 PhD students and 1 Prof. Doc. student to completion. He is delighted to be hosting the 2022 conference of the ISBS in Liverpool. Mark is currently an Associate Editor of the Journal of Sports Sciences. -->
