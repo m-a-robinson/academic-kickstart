@@ -1,8 +1,8 @@
 ---
 title: Clinical projects
-subtitle: Solving biomechanical problems in clinical populations
+subtitle: Applying biomechanical techniques to clinical problems
 date: 2020-07-08T15:43:18.797Z
-summary: Investigating phonon transport in phononic crystals, nanowires, and membranes.
+summary:
 draft: false
 featured: false
 authors: ""
@@ -19,4 +19,12 @@ image:
   preview_only: false
 
 ---
-The goal of the project is to study the propagation of phonons at nanoscales where the average distance between the boundaries of the materials is comparable or less than the mean free path of phonons, usually referred to as ballistic regime. It can be achieved by using phononic crystals, nanowires, and thin membranes. Ballistic phonons are extremely interesting as they can result in a completely new thermal behavior of materials and boost their thermal or thermoelectric properties. Such properties can help to develop more energy-efficient electronics and to extract heat from nanosized objects.
+**Key collaborators:**
+
+Prof. Gabor Barton - LJMU, Liverpool, UK.
+
+# A. Prof. Cyril J. Donnelly - Nanyang Technological University, Singapore
+
+This research theme covers multiple projects demonstrating the breadth of applications for biomechanical approaches. Clinical applications include clinical gait analysis, chronic ankle instability, alkaptonuria (a rare genetic disease), scleroderma and spinal cord injury. Clinical collaborations are welcome - please get in contact with ideas for potential projects.
+
+Mark's PhD evaluated tetraplegic reaching after tendon-transfer, a surgical procedure to restore active elbow extension [this project is no longer active].

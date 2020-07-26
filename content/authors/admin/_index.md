@@ -18,7 +18,7 @@ organizations:
   url: "https://www.ljmu.ac.uk/about-us/faculties/faculty-of-science/school-of-sport-and-exercise-sciences"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Dedicated teacher, researcher and mentor. Work in progress.
+bio: Teacher, researcher, mentor, work in progress.
 
 interests:
 - Knee Injury (ACL)
