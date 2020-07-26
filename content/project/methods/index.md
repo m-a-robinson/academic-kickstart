@@ -19,4 +19,4 @@ image:
   preview_only: false
 
 ---
-Biomechanics is a relatively young scientific discipline and has seen tremendous advancement in technologies. There is therefore necessary emphasis on establishing appropriate methods to address biomecahnical problems. This research theme collects together methods focussed papers that underpin the research in other themes. The primary focus is on geometric modelling approaches for kinematic and kinetic analysis.
+Biomechanics is a relatively young scientific discipline and has seen tremendous advancement in technologies. There is therefore a necessary emphasis on establishing appropriate methods. This research theme collects together methods focussed papers that underpin the research in other themes. The primary focus is on geometric modelling approaches for kinematic and kinetic analysis.
