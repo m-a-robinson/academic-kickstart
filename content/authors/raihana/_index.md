@@ -15,7 +15,7 @@ role: Assistant Professor
 # Organizations/Affiliations
 organizations:
 - name: UiTM
-  url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
+  url: "https://sports.uitm.edu.my/v2/index.php/2015-08-12-04-16-45/top-management/31-ym-raja-mohammed-firhad-raja-azidin-dr"
 
 # Short bio (displayed in user profile at end of posts)
 bio: PhD in TRL - completed 2019
