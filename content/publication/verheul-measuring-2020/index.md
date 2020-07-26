@@ -16,8 +16,8 @@ projects: [training_load]
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-  image = "lab_to_field.png"
-  caption = ""
-  preview = true
+image = "lab_to_field.png"
+caption = ""
+preview = true
 
 ---
