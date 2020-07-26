@@ -1,7 +1,6 @@
 ---
 title: "Measuring biomechanical loads in team sports – from lab to field"
 date: 2020-01-01
-image_preview: "lab_to_field.png"
 publishDate: 2020-07-05T06:34:43.859226Z
 authors: ["Jasper Verheul", "Niels J. Nedergaard", "Jos Vanrenterghem", "Mark A. Robinson"]
 publication_types: ["2"]
@@ -17,6 +16,8 @@ projects: [training_load]
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-  image = ""
+  image = "lab_to_field.png"
   caption = ""
+  preview = true
+
 ---
