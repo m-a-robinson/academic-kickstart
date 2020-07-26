@@ -17,6 +17,6 @@ projects: [training_load]
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = ""
-caption = ""
+  image = ""
+  caption = ""
 ---
