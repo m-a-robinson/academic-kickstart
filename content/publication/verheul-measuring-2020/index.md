@@ -15,9 +15,9 @@ tags:
 projects: [training_load]
 
 # Optional featured image (relative to `static/img/` folder).
-header:
+<!-- header:
   image: "pub_img/lab_to_field.png"
   caption: ""
-  preview: true
+  preview: true -->
 
 ---
