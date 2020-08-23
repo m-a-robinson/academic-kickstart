@@ -12,7 +12,6 @@ url_pdf: "https://linkinghub.elsevier.com/retrieve/pii/S1440244018303529"
 doi: "10.1016/j.jsams.2019.07.006"
 projects:
   - training_load
-  - spm1d
 tags:
   - Training load
   - Ground Reaction Forces
