@@ -29,7 +29,7 @@ image_preview: "featured.png"
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   placement: 1
-  caption: "Photo by [Academic](https://sourcethemes.com/academic/)"
+  caption: ""
   focal_point: "Center"
   preview_only: false
   alt_text: An optional description of the image for screen readers.
