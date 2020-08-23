@@ -24,12 +24,14 @@ image_preview: "featured.png"
   caption: ""
   preview: true -->
 
-  # Featured image
-  # To use, add an image named `featured.jpg/png` to your page's folder.
-  # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-<!-- image: "featured.png"
-  caption: ""
-  focal_point: ""
-  preview_only: true -->
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  placement: 1
+  caption: "Photo by [Academic](https://sourcethemes.com/academic/)"
+  focal_point: "Center"
+  preview_only: false
+  alt_text: An optional description of the image for screen readers.
 
 ---
