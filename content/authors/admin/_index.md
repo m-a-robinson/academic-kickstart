@@ -20,7 +20,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Teacher, researcher, mentor, work in progress.
 
-interest:
+interests:
 - Knee Injury (ACL)
 - Statistics in Biomechanics (spm1d)
 - Soccer - Training Load Monitoring
