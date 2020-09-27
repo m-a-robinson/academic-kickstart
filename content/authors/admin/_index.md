@@ -20,7 +20,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Teacher, researcher, mentor, work in progress.
 
-interests:
+interest:
 - Knee Injury (ACL)
 - Statistics in Biomechanics (spm1d)
 - Soccer - Training Load Monitoring
@@ -72,7 +72,7 @@ user_groups:
 - Lead Researcher
 
 ---
-Mark is a dedicated teacher, mentor and researcher. He teaches undergraduate and postgraduate biomechanics courses and has been programme leader of BSc (Hons) Sport and Exercise Science for five years. His research applies innovative methods and perspectives to problems in sport and clinical biomechanics.
+Mark is a dedicated teacher, researcher and mentor. He teaches undergraduate and postgraduate biomechanics courses at LJMU and has been programme leader of BSc (Hons) Sport and Exercise Science for five years. His research applies innovative methods and perspectives to problems in sport and clinical biomechanics.
 
 He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and supervised award winning PhD students exploring the use of accelerometry for monitoring athletic exposure. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 

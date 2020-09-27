@@ -22,6 +22,7 @@ image:
 **Key collaborators:**
 
 Prof. Gabor Barton - LJMU, Liverpool, UK.
+
 A. Prof. Cyril J. Donnelly - Nanyang Technological University, Singapore
 
 This research theme covers multiple projects demonstrating the breadth of applications for biomechanical approaches. Clinical applications include clinical gait analysis, chronic ankle instability, alkaptonuria (a rare genetic disease), scleroderma and spinal cord injury. Clinical collaborations are welcome - please get in contact with ideas for potential projects.
