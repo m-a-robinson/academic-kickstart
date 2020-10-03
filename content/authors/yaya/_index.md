@@ -21,7 +21,7 @@ organizations:
 bio:
 
 interests:
-- PhD - Add title
+- PhD - Biomechanical aspects of postural balance strategy in dynamic sports activities
 
 education:
   courses:
