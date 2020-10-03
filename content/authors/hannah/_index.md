@@ -1,36 +1,40 @@
 ---
 # Display name
-title: Niels Nedergaard
+title: Hannah Shepherd
 
 # Username (this should match the folder name)
 authors:
-- niels
+- hannah
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Post-doctoral Researcher
+role: Associate Lecturer
 
 # Organizations/Affiliations
 organizations:
-- name: University of Copenhagen
-  url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
+- name: LJMU
+  url: "https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/sport-and-exercise-sciences/hannah-shepherd"
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
 interests:
-- PhD - Whole body biomechanical load monitoring from accelerometry in team sports
+- PhD - The development and evaluation of an individualised gait modification intervention to improve movement function in alkaptonuia patients
 
 education:
   courses:
   - course: PhD in Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2019
-  - course: MSc in Biomechanics
-    institution: Aalborg University
-    year: 2016
+    institution: Liverpool John Moores University
+    year: 2020
+  - course: MSc in Sport & Clinical Biomechanics
+    institution: Liverpool John Moores University
+    year: 2015
+  - course: BSc in Sport & Exercise Science
+    institution: Sheffield Hallam University
+    year: 2013
+
 
 
 # Social/Academic Networking
@@ -38,12 +42,12 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+- icon: envelope
+  icon_pack: fas
+  mailto: "H.R.Shepherd@ljmu.ac.uk"
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/nj_nedergaard
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=zSnBsmEAAAAJ&hl=en&oi=sra
+  link: https://twitter.com/HannahRShep
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

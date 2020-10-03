@@ -10,18 +10,18 @@ authors:
 superuser: false
 
 # Role/position
-role: Post-doctoral
+role: PhD Graduate
 
 # Organizations/Affiliations
 organizations:
-- name: UiTM
-  url: "https://sports.uitm.edu.my/v2/index.php/2015-08-12-04-16-45/top-management/31-ym-raja-mohammed-firhad-raja-azidin-dr"
+- name:
+  url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: PhD in TRL - completed 2019
 
 interests:
-- PhD - add here
+- PhD - Improvement of hand & finger function in systemic sclerosis - Game based interventions informed by hand mobility
 
 education:
   courses:
