@@ -18,7 +18,7 @@ organizations:
   url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in TRL - completed 2019
+bio: 
 
 interests:
 - PhD - The role of biomechanical markers of dynamic stability in the execution of highly dynamic tasks
@@ -27,7 +27,7 @@ education:
   courses:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
-    year: 2019
+    year: 2020
   - course: MSc in Sport & Clinical Biomechanics
     institution: Liverpool John Moores University University
     year: 2016
@@ -40,19 +40,14 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:m.a.robinson@ljmu.ac.uk.
+  link: '#contact'  # For a direct email link, use "mailto:".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/mrobbo18
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=sqCJJ7wAAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/m-a-robinson
-- icon: publons
-  icon_pack: ai
-  link: https://publons.com/researcher/1182276/mark-a-robinson/
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

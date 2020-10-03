@@ -18,7 +18,7 @@ organizations:
   url: "https://sports.uitm.edu.my/v2/index.php/2015-08-12-04-16-45/top-management/31-ym-raja-mohammed-firhad-raja-azidin-dr"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in postural stability - completed 2019
+bio: 
 
 interests:
 - PhD - Add title
@@ -27,10 +27,8 @@ education:
   courses:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
-    year: 2019
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2016
+    year: 2017
+
 
 
 # Social/Academic Networking
@@ -41,12 +39,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:j.p.verheul@bham.ac.uk"
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/jasper_verheul
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.com/citations?user=V2lFxhwAAAAJ&hl=en
+  link: https://scholar.google.co.uk/citations?user=m5MfnM0AAAAJ&hl=en&oi=sra
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

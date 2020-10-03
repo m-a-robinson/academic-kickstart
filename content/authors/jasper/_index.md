@@ -21,7 +21,7 @@ organizations:
 bio: PhD in TRL - completed 2019
 
 interests:
-- PhD - Biomechanical loads in running-based sports. Estimating ground reaction forces from segemental accelerations
+- PhD Topic - Biomechanical loads in running-based sports. Estimating ground reaction forces from segemental accelerations
 
 education:
   courses:
@@ -31,7 +31,9 @@ education:
   - course: MSc in Sport & Clinical Biomechanics
     institution: Liverpool John Moores University University
     year: 2016
-
+  - course: BSc in Architecture
+    institution: Eindhoven University of Technology
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons

@@ -28,8 +28,8 @@ education:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
     year: 2019
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
+  - course: MSc in Biomechanics
+    institution: Aalborg University
     year: 2016
 
 

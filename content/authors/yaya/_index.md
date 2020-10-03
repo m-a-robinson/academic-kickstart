@@ -18,7 +18,7 @@ organizations:
   url: "https://ss.mahidol.ac.th/en/index.php/about-us/personnel/faculty"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in postural stability - completed 2019
+bio:
 
 interests:
 - PhD - Add title
@@ -28,9 +28,7 @@ education:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
     year: 2019
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2016
+
 
 
 # Social/Academic Networking

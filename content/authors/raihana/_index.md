@@ -18,7 +18,7 @@ organizations:
   url: "https://sports.uitm.edu.my/v2/index.php/2015-08-12-04-16-45/top-management/31-ym-raja-mohammed-firhad-raja-azidin-dr"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in TRL - completed 2019
+bio:
 
 interests:
 - PhD - A critical evaluation of biomechanical risk factors for ACL injuries during dynamic activities
@@ -27,10 +27,8 @@ education:
   courses:
   - course: PhD in Biomechanics
     institution: Liverpool John Moores University University
-    year: 2019
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2016
+    year: 2018
+
 
 
 # Social/Academic Networking
