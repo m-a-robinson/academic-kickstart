@@ -76,7 +76,7 @@ Mark is a dedicated teacher, researcher and mentor. He teaches undergraduate and
 
 He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and supervised award winning PhD students exploring the use of accelerometry for monitoring athletic exposure. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
 
-For new projects, discussions, collaborations or to explore PhD/post-doc funding opportunities, don't hesitate to get in touch.
+New projects, discussions, collaborations, students welcome.
 
 <!-- # Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
 
