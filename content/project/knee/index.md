@@ -23,9 +23,6 @@ image:
 
 A. Prof. Jos Vanrenterghem - KU Leuven, Belgium
 
-A. Prof. Cyril J. Donnelly - Nanyang Technological University, Singapore
-
-A. Prof. Sina David - German Sport University, Cologne, Germany
 ___
 
 The Anterior Cruciate Ligament is a primary knee stabiliser that is most commonly injured during dynamic team sports e.g. soccer, handball, netball. This research theme focusses on the evaluation of biomechanical and neuromuscular risk factors which are widely believed to be modifiable. Systematic reviews in each of these areas evaluated the current knowledge and quality of research indicating lack of consensus within the literature.
