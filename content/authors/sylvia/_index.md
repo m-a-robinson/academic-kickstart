@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Elena Eusterweimann
+title: Sylvia Augustine
 
 # Username (this should match the folder name)
 authors:
-- elena
+- sylvia
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD Graduate
+role: PhD Student
 
 # Organizations/Affiliations
 organizations:
@@ -18,19 +18,14 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in TRL - completed 2019
+bio: PhD student at LJMU
 
 interests:
-- PhD - Improvement of hand & finger function in systemic sclerosis - Game based interventions informed by hand mobility
+- PhD - Evaluating the possibilities for markerless motion capture in sport and clinical biomechanics
 
 education:
   courses:
-  - course: PhD in Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2020
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2016
+
 
 
 # Social/Academic Networking
@@ -65,5 +60,5 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Alumni
+- PhD Students
 ---

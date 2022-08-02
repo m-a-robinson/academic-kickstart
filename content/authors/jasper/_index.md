@@ -10,11 +10,11 @@ authors:
 superuser: false
 
 # Role/position
-role: Post-doctoral Researcher
+role: Lecturer
 
 # Organizations/Affiliations
 organizations:
-- name: University of Birmingham
+- name: Cardiff Metropolitan University
   url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
 
 # Short bio (displayed in user profile at end of posts)
