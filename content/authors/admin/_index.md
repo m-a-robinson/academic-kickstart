@@ -72,12 +72,16 @@ user_groups:
 - Lead Researcher
 
 ---
-Mark is a dedicated teacher, researcher and mentor. He teaches undergraduate and postgraduate biomechanics courses at LJMU and has been programme leader of BSc (Hons) Sport and Exercise Science for five years. His research applies innovative methods and perspectives to problems in sport and clinical biomechanics.
+Mark is a dedicated teacher, researcher and mentor. He has taught undergraduate and postgraduate biomechanics courses at LJMU for >18 years.
 
-He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and supervised award winning PhD students exploring the use of accelerometry for monitoring athletic exposure. Perhaps most well-known is his research integrating Statistical Parametric Mapping into biomechanics, through this he challenges conventional biomechanical data analysis and experimentation.
+His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. Completed PhD projects include  biomechanical and neuromuscular ACL injury risk factors and the use of accelerometry for monitoring athletic exposure. His research collaborations integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
+
+Mark recently hosted the 40th Conference of the International Society of Biomechanics in Sports at LJMU in Liverpool.
 
 New projects, discussions, collaborations, students welcome.
 
 <!-- # Mark is a Reader (Associate Professor) of biomechanics in the School of Sport and Exercise Science, LJMU. He teaches on  undergraduate and postgraduate sports science and biomechanics programmes. He has been programme leader on BSc (Hons) Sport and Exercise Science since 2015. He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership".
+
+# He has supervised PhD projects in the areas of biomechanical and neuromuscular ACL injury risk factors and supervised award winning PhD students exploring the use of accelerometry for monitoring athletic exposure. His research collaborations integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
 
 # Mark’s research relates to knee injuries in sports, training load sensors, and clinical biomechanics. His research also includes the development of 1D Statistical Parametric Mapping (www.spm1d.org) for analysing complex biomechanical data. He has run numerous workshops and seminars on spm1d around the world. He has published >55 journal articles in these areas since 2012 and has >55 verified reviews on Publons. Mark has supervised and co-supervised 9 PhD students and 1 Prof. Doc. student to completion. He is delighted to be hosting the 2022 conference of the ISBS in Liverpool. Mark is currently an Associate Editor of the Journal of Sports Sciences. -->
