@@ -21,7 +21,7 @@ organizations:
 bio:
 
 interests:
-- Soccer - Training Load Monitoring
+- Multi-Directional movement of football players
 
 education:
 
