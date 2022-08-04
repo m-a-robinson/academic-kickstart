@@ -10,27 +10,21 @@ authors:
 superuser: false
 
 # Role/position
-role: Head of Academy Sports Science, Celtic FC
+role: Head of Academy Performance Support, Leicester City FC
 
 # Organizations/Affiliations
 organizations:
-- name: University of Bolton
-  url: "https://www.birmingham.ac.uk/schools/sport-exercise/staff/profile.aspx?ReferenceId=174541&Name=dr-jasper-verheul"
+- name: Leicester City FC
+  url: "https://www.linkedin.com/in/oliver-morgan-3a188a2a"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD in TRL - completed 2019
+bio:
 
 interests:
 - Soccer - Training Load Monitoring
 
 education:
-  courses:
-  - course: PhD in Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2019
-  - course: MSc in Sport & Clinical Biomechanics
-    institution: Liverpool John Moores University University
-    year: 2016
+
 
 
 # Social/Academic Networking
