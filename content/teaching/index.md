@@ -22,17 +22,14 @@ Mark is an experienced Higher Education teacher and a Fellow of the Higher Educa
 - Year tutor 
 
 # Academic Awards
-
 Mark has been nominated by LJMU students in their Amazing Teaching Awards in the categories of "Amazing Academic Supervisor", "Amazing Teacher" and "Amazing Programme Team". 
 
 He gained a LJMU Teaching and Learning Excellence Award in 2019 for "Academic Leadership". 
 
 # Teaching Areas
-
 Mark teaches on the undergraduate Sport & Exercise Science and Science & Football programmes and on the MSc Sport and Clinical Biomechanics programme. 
 
 # External Examiner Roles
-
 - BSc Health & Performance Science programme at University College Dublin [2017 - 2020] 
 - MSc Sports Biomechanics at Loughborough University [2022 - date]
 
