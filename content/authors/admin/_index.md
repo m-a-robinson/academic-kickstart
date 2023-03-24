@@ -21,9 +21,9 @@ organizations:
 bio: Teacher, researcher, mentor, work in progress.
 
 interests:
-- Knee Injury (ACL)
+- Knee Injuries
 - Statistics in Biomechanics (spm1d)
-- Soccer - Training Load Monitoring
+- Training Load Monitoring
 
 education:
   courses:
@@ -54,9 +54,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/m-a-robinson
-- icon: publons
-  icon_pack: ai
-  link: https://publons.com/researcher/1182276/mark-a-robinson/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/mark-robinson-79693426b/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -74,7 +74,7 @@ user_groups:
 ---
 Mark is a dedicated teacher, researcher and mentor. He has taught undergraduate and postgraduate biomechanics courses at LJMU for >18 years.
 
-His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. Completed PhD projects include  biomechanical and neuromuscular ACL injury risk factors and the use of accelerometry for monitoring athletic exposure. His research collaborations integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
+His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. Current research themes include knee injury risk and prevention, markerless motion capture, wearable technology and data science for training load monitoring. His research collaborations integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
 
 Mark recently hosted the 40th Conference of the International Society of Biomechanics in Sports at LJMU in Liverpool.
 

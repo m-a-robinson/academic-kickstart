@@ -38,7 +38,7 @@ height = "400px"
 
 [[item]]
   title = "knee biomechanics"
-  content = "ACL injury, sidestepping, neuromuscular risk factors"
+  content = "ACL injury risk factors, prevention and outcomes"
   align = "center"
   overlay_color = "#404040"  # An HTML color value.
   overlay_img = "slider/knee.png"  # relative to `static/img/` folder.
@@ -51,7 +51,7 @@ height = "400px"
 
 [[item]]
   title = "training load"
-  content = "Integrating biomechanics into training load monitoring"
+  content = "integrating biomechanics into training load monitoring"
   align = "center"
   overlay_color = "#404040"  # An HTML color value.
   overlay_img = "slider/grf_predict.png"  # relative to `static/img/` folder.
