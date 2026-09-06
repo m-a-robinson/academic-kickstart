@@ -41,9 +41,9 @@ Then [personalize your new site](https://sourcethemes.com/academic/docs/get-star
 
 This site used to deploy via Netlify. It now builds and deploys with
 GitHub Actions (`.github/workflows/deploy.yml`), which builds the Hugo
-site and uploads `public/` over FTPS to your hosting account. This works
-regardless of whether your cPanel plan supports Git deploys - it only
-needs FTP/FTPS, which virtually every shared hosting package (including
+site and uploads `public/` over plain FTP to your hosting account. This
+works regardless of whether your cPanel plan supports Git deploys - it
+only needs FTP, which virtually every shared hosting package (including
 123-reg) provides.
 
 **One-time setup:**
@@ -52,7 +52,9 @@ needs FTP/FTPS, which virtually every shared hosting package (including
    your main hosting account login. Note the host, username and password.
 2. In the GitHub repo, go to Settings -> Secrets and variables -> Actions
    and add:
-   - `FTP_SERVER` - e.g. `ftp.mark-a-robinson.uk`
+   - `FTP_SERVER` - the hosting provider's own FTP hostname (check your
+     123-reg hosting control panel's FTP Accounts/Details page - this is
+     often a provider hostname, not `ftp.yourdomain`)
    - `FTP_USERNAME`
    - `FTP_PASSWORD`
    - `FTP_SERVER_DIR` (optional) - the remote folder to publish into, e.g.
@@ -68,8 +70,8 @@ needs FTP/FTPS, which virtually every shared hosting package (including
    nameservers if 123-reg also manages the domain) to point at the new
    hosting, and delete/pause the old site on Netlify.
 
-If your 123-reg package turns out to only support plain FTP (not FTPS),
-change `protocol: ftps` to `protocol: ftp` in the workflow.
+If your hosting package does support FTPS, you can switch `protocol: ftp`
+to `protocol: ftps` in the workflow for an encrypted connection.
 
 ## Google Scholar publication sync
 
