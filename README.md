@@ -37,6 +37,58 @@ Then [personalize your new site](https://sourcethemes.com/academic/docs/get-star
 * **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
 * **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
 
+## Deployment (123-reg / cPanel hosting)
+
+This site used to deploy via Netlify. It now builds and deploys with
+GitHub Actions (`.github/workflows/deploy.yml`), which builds the Hugo
+site and uploads `public/` over FTPS to your hosting account. This works
+regardless of whether your cPanel plan supports Git deploys - it only
+needs FTP/FTPS, which virtually every shared hosting package (including
+123-reg) provides.
+
+**One-time setup:**
+
+1. In cPanel, find your FTP account details (Files -> FTP Accounts), or use
+   your main hosting account login. Note the host, username and password.
+2. In the GitHub repo, go to Settings -> Secrets and variables -> Actions
+   and add:
+   - `FTP_SERVER` - e.g. `ftp.mark-a-robinson.uk`
+   - `FTP_USERNAME`
+   - `FTP_PASSWORD`
+   - `FTP_SERVER_DIR` (optional) - the remote folder to publish into, e.g.
+     `/public_html/`. If your FTP account already lands in the right
+     folder, leave this unset.
+3. Push to `master` (or run the workflow manually from the Actions tab) to
+   trigger a deploy.
+4. Verify the new hosting serves the site correctly (e.g. via the
+   hosting's temporary/IP-based URL or a test subdomain) **before**
+   pointing your domain's DNS at it, so you don't get downtime if
+   something's misconfigured.
+5. Once verified, update your domain's DNS (A/CNAME records, or
+   nameservers if 123-reg also manages the domain) to point at the new
+   hosting, and delete/pause the old site on Netlify.
+
+If your 123-reg package turns out to only support plain FTP (not FTPS),
+change `protocol: ftps` to `protocol: ftp` in the workflow.
+
+## Google Scholar publication sync
+
+`.github/workflows/scholar-sync.yml` runs weekly (and can be triggered
+manually from the Actions tab) and checks the configured Google Scholar
+profile for papers that aren't yet in `content/publication/`. Any new
+paper is added as a draft (`draft: true`, tagged `Needs review`) and
+opened as a pull request - nothing is published automatically.
+
+To use it: review the PR, fill in/check the DOI, authors, venue, tags and
+`projects` (e.g. `projects: [markerless]`), then set `draft: false` and
+merge.
+
+The scraper (`scholarly`) has no official Google API behind it, so it can
+occasionally be rate-limited or blocked by a CAPTCHA - if a scheduled run
+fails, just re-run it later or trigger it manually. See
+`scripts/scholar_sync.py` for details, including how to point it at a
+different `--scholar-id`.
+
 ## License
 
 Copyright 2017-present [George Cushen](https://georgecushen.com).
