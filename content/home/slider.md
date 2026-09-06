@@ -87,4 +87,16 @@ height = "400px"
   cta_icon_pack = "fas"
   cta_icon = "book-reader"  
 
+[[item]]
+  title = "markerless"
+  content = "video and deep learning based motion capture"
+  align = "center"  # Choose `center`, `left`, or `right`.
+  overlay_color = "#404040"  # An HTML color value. Optional
+  # overlay_img = "slider/markerless.png"  # Add an image to static/img/slider/ and uncomment to use it.
+  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
+  cta_label = "project details"
+  cta_url = "/project/markerless/"
+  cta_icon_pack = "fas"
+  cta_icon = "book-reader"
+
 +++

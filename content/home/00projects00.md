@@ -29,6 +29,11 @@ subtitle = ""
   #  photo = ""
   #  website = ""
 
+  [[content.filter_button]]
+    name = "Markerless"
+  #  photo = ""
+  #  website = ""
+
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
