@@ -40,8 +40,8 @@ doi: https://doi.org/10.7717/peerj.18613
 tags:
 - Markerless
 - Methods
-- Needs review
+- Gait
 projects:
 - markerless
-draft: true
+draft: false
 ---
