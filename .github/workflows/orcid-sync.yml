@@ -23,6 +23,11 @@ on:
         required: false
         type: boolean
         default: false
+      include_all_types:
+        description: "Include conference abstracts/posters too, instead of skipping them"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -48,6 +53,7 @@ jobs:
           ORCID_ID: ${{ inputs.orcid_id }}
           MIN_YEAR: ${{ inputs.min_year }}
           ALL_YEARS: ${{ inputs.all_years }}
+          INCLUDE_ALL_TYPES: ${{ inputs.include_all_types }}
         run: |
           args=()
           [ -n "$ORCID_ID" ] && args+=(--orcid-id "$ORCID_ID")
@@ -56,6 +62,7 @@ jobs:
           elif [ -n "$MIN_YEAR" ]; then
             args+=(--min-year "$MIN_YEAR")
           fi
+          [ "$INCLUDE_ALL_TYPES" = "true" ] && args+=(--include-all-types)
           python scripts/orcid_sync.py "${args[@]}"
 
       - name: Check for new publications

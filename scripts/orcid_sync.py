@@ -19,9 +19,19 @@ DEFAULT_YEARS_BACK) - older ORCID entries are far more likely to already be
 on the site under a slightly different title, and are lower-value to add
 retroactively. Use --all-years to see the full ORCID history instead.
 
+Conference abstracts/posters are excluded by default (see
+DEFAULT_EXCLUDED_TYPES) - these are usually a secondary listing of a paper
+presented properly elsewhere (e.g. as a journal-article), so including them
+mostly adds review-queue noise. Use --include-all-types to see everything.
+
+Each new entry gets a best-guess `tags`/`projects` based on keyword
+matching against the site's existing taxonomy (see TAXONOMY) - a starting
+point for the reviewer, not a substitute for review.
+
 Usage:
     python scripts/orcid_sync.py [--orcid-id ID] [--dry-run]
                                   [--min-year YEAR | --all-years]
+                                  [--exclude-types T1,T2 | --include-all-types]
 """
 from __future__ import annotations
 
@@ -50,6 +60,64 @@ USER_AGENT = "academic-kickstart-orcid-sync/1.0 (+https://github.com/m-a-robinso
 # hand-written repo copy (quote styles, ampersands, subtitles, stray
 # whitespace), so use fuzzy similarity rather than exact string equality.
 TITLE_SIMILARITY_THRESHOLD = 0.90
+
+# ORCID work types (https://info.orcid.org/documentation/) that are excluded
+# by default: secondary listings of a paper that's presented properly
+# elsewhere (as a journal-article, say), which mostly just add noise/
+# duplicates to the review queue.
+DEFAULT_EXCLUDED_TYPES = {"conference-abstract", "conference-poster"}
+
+# Heuristic keyword -> (project, tags) map used to pre-fill new entries,
+# based on the vocabulary already used across content/publication/. This is
+# a starting guess for the reviewer, not a substitute for review - every
+# entry is still marked draft/"Needs review" regardless of what's predicted
+# here. Matching is case-insensitive against "title. abstract", each
+# keyword must match on a word boundary.
+TAXONOMY: list[tuple[list[str], str, list[str]]] = [
+    (["markerless", "theia3d", "pose estimation", "motion capture",
+      "camera configuration", "leap motion"],
+     "markerless", ["Markerless"]),
+    (["statistical parametric mapping", "spm1d", "spm", "vector field",
+      "waveform", "power analysis", "sample size"],
+     "spm1d", ["SPM"]),
+    (["training load", "microcycle", "match load", "accelerometry",
+      "ground reaction force", "wearable sensor", "player load",
+      "training and match load"],
+     "training_load", ["Training Load"]),
+    (["anterior cruciate ligament", "acl", "sidestepping", "side-cutting",
+      "side cutting", "knee abduction", "knee flexion",
+      "change of direction"],
+     "knee", ["ACL", "Knee"]),
+    (["alkaptonuria", "systemic sclerosis", "concussion", "mtbi",
+      "rehabilitation", "clinical population"],
+     "clinical", ["Clinical"]),
+    (["reliability", "validity", "biomechanical model", "kinematic model",
+      "inverse kinematics", "gait model"],
+     "methods", ["Methods"]),
+]
+
+
+def predict_project_and_tags(title: str, abstract: str) -> tuple[list[str], list[str]]:
+    """Heuristically guess a project and tags from title/abstract keywords.
+
+    Picks the single best-matching project (most keyword hits), but
+    collects tags from every taxonomy group that matched at all, since a
+    paper can reasonably carry tags from more than one theme. Always keeps
+    "Needs review" so the guess still gets checked before publishing.
+    """
+    text = f"{title} {abstract}".lower()
+    scores: dict[str, int] = {}
+    tags: list[str] = []
+    for keywords, project, project_tags in TAXONOMY:
+        hits = sum(1 for kw in keywords if re.search(rf"\b{re.escape(kw)}\b", text))
+        if hits:
+            scores[project] = scores.get(project, 0) + hits
+            for tag in project_tags:
+                if tag not in tags:
+                    tags.append(tag)
+    tags.append("Needs review")
+    best_project = max(scores, key=scores.get) if scores else None
+    return ([best_project] if best_project else []), tags
 
 
 def normalise_title(title: str) -> str:
@@ -215,6 +283,7 @@ def fetch_orcid_works(orcid_id: str, session: requests.Session) -> list[dict]:
             "year": year,
             "journal": (summary.get("journal-title") or {}).get("value"),
             "url": (summary.get("url") or {}).get("value"),
+            "type": summary.get("type"),  # e.g. "journal-article", "conference-abstract"
         })
     return works
 
@@ -268,6 +337,8 @@ def build_front_matter(work: dict, crossref: dict | None) -> tuple[str, dict]:
     first_author_lastname = slugify(authors[0].split()[-1]) if authors[0] != "Unknown" else "unknown"
     slug_base = f"{first_author_lastname}-{keyword_from_title(title)}-{year or 'nd'}"
 
+    projects, tags = predict_project_and_tags(title, abstract)
+
     front_matter = {"title": title}
     if date:
         front_matter["date"] = date
@@ -279,8 +350,8 @@ def build_front_matter(work: dict, crossref: dict | None) -> tuple[str, dict]:
         "publication": journal,
         "url_pdf": url,
         "doi": f"https://doi.org/{doi}" if doi else "",
-        "tags": ["Needs review"],
-        "projects": [],
+        "tags": tags,
+        "projects": projects,
         "draft": True,
     })
     return slug_base, front_matter
@@ -314,6 +385,14 @@ def main() -> int:
         "--all-years", action="store_true",
         help="Disable the year cutoff entirely and consider the full ORCID history",
     )
+    parser.add_argument(
+        "--exclude-types", default=",".join(sorted(DEFAULT_EXCLUDED_TYPES)),
+        help="Comma-separated ORCID work types to skip (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--include-all-types", action="store_true",
+        help="Don't filter by work type at all (overrides --exclude-types)",
+    )
     args = parser.parse_args()
 
     if args.all_years:
@@ -322,6 +401,10 @@ def main() -> int:
         min_year = args.min_year
     else:
         min_year = date.today().year - DEFAULT_YEARS_BACK
+
+    excluded_types = set()
+    if not args.include_all_types:
+        excluded_types = {t.strip().lower() for t in args.exclude_types.split(",") if t.strip()}
 
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
@@ -333,6 +416,11 @@ def main() -> int:
         print(f"Failed to fetch ORCID profile: {exc!r}", file=sys.stderr)
         return 1
     print(f"Found {len(works)} works on ORCID record.")
+
+    if excluded_types:
+        before = len(works)
+        works = [w for w in works if (w.get("type") or "").lower() not in excluded_types]
+        print(f"Excluding types {sorted(excluded_types)}: {before} -> {len(works)} works.")
 
     if min_year is not None:
         before = len(works)
