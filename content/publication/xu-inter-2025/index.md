@@ -22,7 +22,7 @@ doi: https://doi.org/10.1080/02640414.2025.2541490
 tags:
 - Markerless
 - Methods
-- Needs review
+- Screening
 projects:
 - markerless
 draft: true
