@@ -14,7 +14,9 @@ publication: Journal of Sports Sciences
 url_pdf: https://doi.org/10.1080/02640414.2024.2428086
 doi: https://doi.org/10.1080/02640414.2024.2428086
 tags:
-- Needs review
-projects: []
-draft: true
+- Musculoskeletal modelling
+- Deceleration
+projects:
+- knee
+draft: false
 ---
