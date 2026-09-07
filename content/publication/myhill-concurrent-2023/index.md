@@ -17,8 +17,9 @@ url_pdf: https://doi.org/10.1080/24733938.2023.2237493
 doi: https://doi.org/10.1080/24733938.2023.2237493
 tags:
 - Methods
-- Needs review
+- Training Load
+- Sensors
 projects:
-- methods
-draft: true
+- training_load
+draft: false
 ---
