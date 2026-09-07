@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Reader of Biomechanics
+role: Subject Head of Biomechanics and Strength and Conditioning
 
 # Organizations/Affiliations
 organizations:
@@ -45,9 +45,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:m.a.robinson@ljmu.ac.uk"
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/mrobbo18
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=sqCJJ7wAAAAJ&hl=en
@@ -77,9 +74,9 @@ user_groups:
 ---
 Mark is a dedicated teacher, researcher and mentor. He has taught undergraduate and postgraduate biomechanics courses at LJMU for >18 years.
 
-His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. Current research themes include knee injury risk and prevention, markerless motion capture, wearable technology and data science for training load monitoring. His research collaborations integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
+His research applies innovative methods and perspectives to problems in sport and clinical biomechanics. Current research themes include knee injury risk, prevention and rehabilitation, markerless motion capture, wearable technology and load monitoring. His research integrating Statistical Parametric Mapping into biomechanics challenges conventional biomechanical data analysis and experimentation.
 
-Mark recently hosted the 40th Conference of the International Society of Biomechanics in Sports at LJMU in Liverpool.
+Host of the 40th Conference of the International Society of Biomechanics in Sports at LJMU in Liverpool, 2022.
 
 New projects, discussions, collaborations, students welcome.
 
