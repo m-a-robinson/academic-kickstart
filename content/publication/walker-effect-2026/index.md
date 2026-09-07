@@ -23,8 +23,7 @@ url_pdf: https://doi.org/10.1016/j.jbiomech.2026.113522
 doi: https://doi.org/10.1016/j.jbiomech.2026.113522
 tags:
 - Markerless
-- Needs review
 projects:
 - markerless
-draft: true
+draft: false
 ---
