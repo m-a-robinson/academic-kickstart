@@ -41,9 +41,9 @@ Then [personalize your new site](https://sourcethemes.com/academic/docs/get-star
 
 This site used to deploy via Netlify. It now builds and deploys with
 GitHub Actions (`.github/workflows/deploy.yml`), which builds the Hugo
-site and uploads `public/` over FTPS to your hosting account. This works
-regardless of whether your cPanel plan supports Git deploys - it only
-needs FTP/FTPS, which virtually every shared hosting package (including
+site and uploads `public/` over plain FTP to your hosting account. This
+works regardless of whether your cPanel plan supports Git deploys - it
+only needs FTP, which virtually every shared hosting package (including
 123-reg) provides.
 
 **One-time setup:**
@@ -52,7 +52,9 @@ needs FTP/FTPS, which virtually every shared hosting package (including
    your main hosting account login. Note the host, username and password.
 2. In the GitHub repo, go to Settings -> Secrets and variables -> Actions
    and add:
-   - `FTP_SERVER` - e.g. `ftp.mark-a-robinson.uk`
+   - `FTP_SERVER` - the hosting provider's own FTP hostname (check your
+     123-reg hosting control panel's FTP Accounts/Details page - this is
+     often a provider hostname, not `ftp.yourdomain`)
    - `FTP_USERNAME`
    - `FTP_PASSWORD`
    - `FTP_SERVER_DIR` (optional) - the remote folder to publish into, e.g.
@@ -68,26 +70,33 @@ needs FTP/FTPS, which virtually every shared hosting package (including
    nameservers if 123-reg also manages the domain) to point at the new
    hosting, and delete/pause the old site on Netlify.
 
-If your 123-reg package turns out to only support plain FTP (not FTPS),
-change `protocol: ftps` to `protocol: ftp` in the workflow.
+If your hosting package does support FTPS, you can switch `protocol: ftp`
+to `protocol: ftps` in the workflow for an encrypted connection.
 
-## Google Scholar publication sync
+## ORCID publication sync
 
-`.github/workflows/scholar-sync.yml` runs weekly (and can be triggered
-manually from the Actions tab) and checks the configured Google Scholar
-profile for papers that aren't yet in `content/publication/`. Any new
-paper is added as a draft (`draft: true`, tagged `Needs review`) and
-opened as a pull request - nothing is published automatically.
+`.github/workflows/orcid-sync.yml` runs weekly (and can be triggered
+manually from the Actions tab) and checks the configured ORCID profile for
+papers that aren't yet in `content/publication/`. Any new paper is added
+as a draft (`draft: true`, tagged `Needs review`) and opened as a pull
+request - nothing is published automatically.
 
 To use it: review the PR, fill in/check the DOI, authors, venue, tags and
 `projects` (e.g. `projects: [markerless]`), then set `draft: false` and
 merge.
 
-The scraper (`scholarly`) has no official Google API behind it, so it can
-occasionally be rate-limited or blocked by a CAPTCHA - if a scheduled run
-fails, just re-run it later or trigger it manually. See
-`scripts/scholar_sync.py` for details, including how to point it at a
-different `--scholar-id`.
+This uses ORCID's public API for the list of works, and Crossref's public
+API (looked up by DOI) to fill in authors, journal and abstract. Both are
+official, key-free REST APIs, so - unlike the Google Scholar scraper this
+replaced - there's no CAPTCHA/blocking risk running it on a schedule.
+
+See `scripts/orcid_sync.py` for details, including how to point it at a
+different `--orcid-id`.
+
+(An earlier version of this tool scraped Google Scholar instead, using the
+`scholarly` package - it worked but was unreliable on CI due to Google
+blocking requests from GitHub's IP ranges. ORCID was switched to because
+it's kept up to date directly and has an official API.)
 
 ## License
 
