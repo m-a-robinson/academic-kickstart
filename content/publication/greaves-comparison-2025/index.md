@@ -38,9 +38,8 @@ url_pdf: https://doi.org/10.3390/s25144249
 doi: https://doi.org/10.3390/s25144249
 tags:
 - Markerless
-- SPM
-- Needs review
+- Gait
 projects:
 - markerless
-draft: true
+draft: false
 ---
