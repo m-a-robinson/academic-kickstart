@@ -85,11 +85,21 @@ To use it: review the PR, fill in/check the DOI, authors, venue, tags and
 `projects` (e.g. `projects: [markerless]`), then set `draft: false` and
 merge.
 
-The scraper (`scholarly`) has no official Google API behind it, so it can
-occasionally be rate-limited or blocked by a CAPTCHA - if a scheduled run
-fails, just re-run it later or trigger it manually. See
-`scripts/scholar_sync.py` for details, including how to point it at a
-different `--scholar-id`.
+The scraper (`scholarly`) has no official Google API behind it, and Google
+routinely CAPTCHA-blocks requests coming from datacenter/CI IPs - including
+GitHub-hosted runners - which makes an unconfigured scheduled run fairly
+likely to fail. To make it reliable:
+
+- Sign up for a free [ScraperAPI](https://www.scraperapi.com/) account
+  (free tier is enough for a weekly check) and add its API key as a
+  repository secret named `SCRAPERAPI_KEY`. The workflow will then route
+  requests through it automatically.
+- Without that secret, the script falls back to `scholarly`'s free public
+  proxy pool, which is best-effort and can still get blocked.
+
+If a run still fails, re-run it later or trigger it manually via
+`workflow_dispatch`. See `scripts/scholar_sync.py` for details, including
+how to point it at a different `--scholar-id`.
 
 ## License
 

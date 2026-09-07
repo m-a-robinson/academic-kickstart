@@ -5,8 +5,14 @@ name: Sync Google Scholar publications
 # opened as a pull request for review - nothing is published automatically.
 #
 # Google Scholar has no official API; scholarly scrapes the public profile
-# and can be rate-limited/CAPTCHA-blocked, especially from CI IP ranges. If a
-# run fails, re-run it manually via workflow_dispatch or wait for next week.
+# and Google frequently CAPTCHA-blocks requests from datacenter/CI IP ranges
+# (including GitHub-hosted runners). To make this reliable, set the optional
+# repository secret SCRAPERAPI_KEY (a free-tier API key from scraperapi.com)
+# so requests are routed through a residential-style proxy instead of
+# GitHub's IP directly. Without it, the script falls back to scholarly's
+# free public proxy pool, which is best-effort and can still get blocked -
+# if a run fails, re-run manually via workflow_dispatch or wait for next
+# week. See README.md for setup details.
 
 on:
   schedule:
@@ -37,6 +43,8 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Run Scholar sync
+        env:
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
         run: |
           python scripts/scholar_sync.py ${{ inputs.scholar_id && format('--scholar-id {0}', inputs.scholar_id) || '' }}
 

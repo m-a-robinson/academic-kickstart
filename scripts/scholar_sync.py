@@ -125,17 +125,64 @@ def write_publication(slug: str, front_matter: dict, dry_run: bool) -> Path:
     return index_file
 
 
+def configure_proxy() -> None:
+    """Route scholarly's requests through a proxy if one is configured.
+
+    Google Scholar aggressively blocks requests from datacenter/CI IP ranges
+    (e.g. GitHub Actions runners), returning a CAPTCHA/"unusual traffic" page
+    instead of the real profile - which scholarly can't parse. A proxy is the
+    standard workaround. Set the SCRAPERAPI_KEY environment variable/secret
+    to a scraperapi.com API key for a reliable proxy; if unset, this falls
+    back to scholarly's free public proxy pool (best-effort, often
+    unreliable, but better than nothing).
+    """
+    import os
+
+    from scholarly import ProxyGenerator, scholarly
+
+    pg = ProxyGenerator()
+    scraperapi_key = os.environ.get("SCRAPERAPI_KEY")
+    if scraperapi_key:
+        print("Using ScraperAPI proxy.")
+        pg.ScraperAPI(scraperapi_key)
+    else:
+        print("No SCRAPERAPI_KEY set - falling back to free public proxies "
+              "(less reliable; see README.md for a more robust option).")
+        try:
+            proxy_ok = pg.FreeProxies()
+        except Exception as exc:  # the free-proxy pool can throw rather than return False
+            print(f"Could not set up a free proxy either ({exc!r}); "
+                  "continuing without one and hoping for the best.")
+            return
+        if not proxy_ok:
+            print("Could not set up a free proxy either; continuing without "
+                  "one and hoping for the best.")
+            return
+    scholarly.use_proxy(pg)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scholar-id", default=DEFAULT_SCHOLAR_ID, help="Google Scholar author ID")
     parser.add_argument("--dry-run", action="store_true", help="Print what would be created without writing files")
     args = parser.parse_args()
 
-    from scholarly import scholarly  # imported lazily so --help doesn't need network deps
+    from scholarly import MaxTriesExceededException, scholarly  # imported lazily so --help doesn't need network deps
+
+    configure_proxy()
 
     print(f"Fetching Google Scholar profile {args.scholar_id} ...")
-    author = scholarly.search_author_id(args.scholar_id)
-    author = scholarly.fill(author, sections=["publications"])
+    try:
+        author = scholarly.search_author_id(args.scholar_id)
+        author = scholarly.fill(author, sections=["publications"])
+    except (MaxTriesExceededException, AttributeError) as exc:
+        print(
+            "Failed to fetch the Scholar profile - this usually means Google "
+            "blocked/CAPTCHA'd the request rather than there being a bug "
+            f"here. Underlying error: {exc!r}",
+            file=sys.stderr,
+        )
+        return 1
     scholar_pubs = author.get("publications", [])
     print(f"Found {len(scholar_pubs)} publications on Scholar profile.")
 
