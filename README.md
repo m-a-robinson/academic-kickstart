@@ -78,8 +78,10 @@ to `protocol: ftps` in the workflow for an encrypted connection.
 `.github/workflows/orcid-sync.yml` runs weekly (and can be triggered
 manually from the Actions tab) and checks the configured ORCID profile for
 papers that aren't yet in `content/publication/`. Any new paper is added
-as a draft (`draft: true`, tagged `Needs review`) and opened as a pull
-request - nothing is published automatically.
+as a draft (`draft: true`, tagged `Needs review`) and opened as **its own**
+pull request - nothing is published automatically, and each paper can be
+merged (accepted) or closed (rejected) independently of every other paper
+found in the same run.
 
 To use it: review the PR, fill in/check the DOI, authors, venue, tags and
 `projects` (e.g. `projects: [markerless]`), then set `draft: false` and
@@ -150,10 +152,16 @@ logic working as intended - not a bug.
 **To reject a suggestion so it's never proposed again: close its pull
 request without merging it.** On the PR page, use the **Close pull
 request** button near the bottom (or `gh pr close <number>` from the CLI).
-Closing (not merging) a "New publications from ORCID" PR triggers
-`.github/workflows/orcid-sync-reject.yml`, which records that
+Since each paper gets its own PR (`scripts/orcid_open_prs.py`, on a branch
+named `orcid-sync/<slug>`), closing one only rejects that one paper -
+every other PR from the same run is unaffected. Closing (not merging) it
+triggers `.github/workflows/orcid-sync-reject.yml`, which records that
 publication's title/DOI in `scripts/orcid_ignore.yml` and commits that
 straight to `master` - future runs will then skip it automatically.
+
+A paper still under review (not yet merged or closed) will have its PR
+simply **updated** on the next run rather than a duplicate PR appearing,
+since the branch name is stable per publication.
 
 You can also pre-emptively exclude something that hasn't been suggested
 yet by adding an entry to `scripts/orcid_ignore.yml` by hand, following
