@@ -17,8 +17,9 @@ doi: https://doi.org/10.1016/j.jbiomech.2025.112896
 tags:
 - ACL
 - Knee
-- Needs review
+- Effect sizes
+- Power
 projects:
 - knee
-draft: true
+draft: false
 ---
