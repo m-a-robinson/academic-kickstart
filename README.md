@@ -101,6 +101,28 @@ slightly different title (and are lower-value to backfill this long after
 publication). Override per-run from the Actions tab ("Run workflow") with
 a specific `min_year`, or tick `all_years` to see the full ORCID history.
 
+### Excluding conference abstracts/posters
+
+Conference abstracts and posters are excluded by default: they're usually
+a secondary listing of a paper presented properly elsewhere as a journal
+article (or full conference paper), rather than a distinct contribution -
+including them mostly duplicates something already in the list under
+different wording that no title-matching can safely merge. Tick
+`include_all_types` when running the workflow manually to see them anyway,
+or pass `--exclude-types` to `orcid_sync.py` to customise the excluded
+type list.
+
+### Predicted tags and project
+
+Each new entry gets a best-guess `tags` and `projects` from keyword
+matching against the site's existing taxonomy (see `TAXONOMY` in
+`scripts/orcid_sync.py`) - e.g. a title/abstract mentioning "markerless"
+or "Theia3D" gets tagged `Markerless` and assigned to the `markerless`
+project. This is a starting point to save re-typing the obvious ones, not
+a substitute for review - check it before setting `draft: false`, and
+extend `TAXONOMY` with more keywords if you notice it's consistently
+missing something.
+
 ### Avoiding duplicates
 
 A publication is skipped as already-present if either:
