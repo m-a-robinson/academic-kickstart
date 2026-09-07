@@ -49,8 +49,8 @@ doi: https://doi.org/10.26603/001c.128505
 tags:
 - ACL
 - Knee
-- Needs review
+- Isokinetics
 projects:
 - knee
-draft: true
+draft: false
 ---
