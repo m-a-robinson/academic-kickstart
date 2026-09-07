@@ -1,10 +1,10 @@
 ---
 # Display name
-title: James Harrison
+title: Ellie Sandelands
 
 # Username (this should match the folder name)
 authors:
-- james
+- ellie
 
 # Is this the primary user of the site?
 superuser: false
@@ -15,18 +15,16 @@ role: PhD Student
 # Organizations/Affiliations
 organizations:
 - name: Liverpool John Moores University
-  url: 
+  url:
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
-- PhD - The effects of ball heading on neurocognitive function
 
 
 education:
   courses:
-
 
 
 
@@ -62,5 +60,5 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Alumni
+- PhD Students
 ---
