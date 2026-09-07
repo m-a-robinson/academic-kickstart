@@ -14,9 +14,10 @@ publication: Journal of Biomechanics
 url_pdf: https://doi.org/10.1016/j.jbiomech.2024.112044
 doi: https://doi.org/10.1016/j.jbiomech.2024.112044
 tags:
-- Training Load
-- Needs review
+- Markerless
+- OpenCap
+- GRF
 projects:
-- training_load
-draft: true
+- markerless
+draft: false
 ---
