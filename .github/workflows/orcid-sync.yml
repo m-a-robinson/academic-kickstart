@@ -15,6 +15,14 @@ on:
       orcid_id:
         description: "ORCID iD (defaults to the site owner's profile)"
         required: false
+      min_year:
+        description: "Only propose works published this year or later (default: current year - 5)"
+        required: false
+      all_years:
+        description: "Consider the full ORCID history, ignoring the year cutoff"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,8 +44,19 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Run ORCID sync
+        env:
+          ORCID_ID: ${{ inputs.orcid_id }}
+          MIN_YEAR: ${{ inputs.min_year }}
+          ALL_YEARS: ${{ inputs.all_years }}
         run: |
-          python scripts/orcid_sync.py ${{ inputs.orcid_id && format('--orcid-id {0}', inputs.orcid_id) || '' }}
+          args=()
+          [ -n "$ORCID_ID" ] && args+=(--orcid-id "$ORCID_ID")
+          if [ "$ALL_YEARS" = "true" ]; then
+            args+=(--all-years)
+          elif [ -n "$MIN_YEAR" ]; then
+            args+=(--min-year "$MIN_YEAR")
+          fi
+          python scripts/orcid_sync.py "${args[@]}"
 
       - name: Check for new publications
         id: changes

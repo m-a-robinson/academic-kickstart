@@ -93,6 +93,14 @@ replaced - there's no CAPTCHA/blocking risk running it on a schedule.
 See `scripts/orcid_sync.py` for details, including how to point it at a
 different `--orcid-id`.
 
+### Recency cutoff
+
+By default only works published in the last 5 years are considered - older
+ORCID entries are far more likely to already be on the site under a
+slightly different title (and are lower-value to backfill this long after
+publication). Override per-run from the Actions tab ("Run workflow") with
+a specific `min_year`, or tick `all_years` to see the full ORCID history.
+
 ### Avoiding duplicates
 
 A publication is skipped as already-present if either:
@@ -102,11 +110,18 @@ A publication is skipped as already-present if either:
 - its title is a close (fuzzy) match to an existing one - not just an
   exact string match, since ORCID/Crossref titles rarely match a
   hand-written repo entry byte-for-byte (punctuation, ampersands, quote
-  styles, etc.). Many older ORCID entries also have no DOI at all, so this
-  title check is often the only signal available.
+  styles, subtitles ORCID drops, etc). Many older ORCID entries also have
+  no DOI at all, so this title check is often the only signal available.
 
-If a run's log shows "Skipped N work(s) as likely-duplicates", that's this
-check working - not a bug.
+The same fuzzy check is also applied *within* a single ORCID fetch, since
+ORCID sometimes carries the same work under two separate source records
+(e.g. two different capitalisations, or the same paper listed under two
+different dates) - without this, a single run could otherwise propose the
+same paper twice.
+
+If a run's log shows "Skipped N work(s) as likely-duplicates" or "After
+removing same-paper duplicates within the ORCID record", that's this
+logic working as intended - not a bug.
 
 ### Rejecting a suggested publication
 
