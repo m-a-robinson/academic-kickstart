@@ -41,10 +41,9 @@ publication: Journal of Strength &amp; Conditioning Research
 url_pdf: https://doi.org/10.1519/jsc.0000000000005145
 doi: https://doi.org/10.1519/JSC.0000000000005145
 tags:
-- ACL
-- Knee
-- Needs review
+- Change of Direction
+- Football
 projects:
-- knee
+- training_load
 draft: true
 ---
