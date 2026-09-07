@@ -17,8 +17,8 @@ url_pdf: https://doi.org/10.1016/j.gaitpost.2025.110020
 doi: https://doi.org/10.1016/j.gaitpost.2025.110020
 tags:
 - Markerless
-- Needs review
+- Gait
 projects:
 - markerless
-draft: true
+draft: false
 ---
