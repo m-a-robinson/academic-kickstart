@@ -73,33 +73,30 @@ only needs FTP, which virtually every shared hosting package (including
 If your hosting package does support FTPS, you can switch `protocol: ftp`
 to `protocol: ftps` in the workflow for an encrypted connection.
 
-## Google Scholar publication sync
+## ORCID publication sync
 
-`.github/workflows/scholar-sync.yml` runs weekly (and can be triggered
-manually from the Actions tab) and checks the configured Google Scholar
-profile for papers that aren't yet in `content/publication/`. Any new
-paper is added as a draft (`draft: true`, tagged `Needs review`) and
-opened as a pull request - nothing is published automatically.
+`.github/workflows/orcid-sync.yml` runs weekly (and can be triggered
+manually from the Actions tab) and checks the configured ORCID profile for
+papers that aren't yet in `content/publication/`. Any new paper is added
+as a draft (`draft: true`, tagged `Needs review`) and opened as a pull
+request - nothing is published automatically.
 
 To use it: review the PR, fill in/check the DOI, authors, venue, tags and
 `projects` (e.g. `projects: [markerless]`), then set `draft: false` and
 merge.
 
-The scraper (`scholarly`) has no official Google API behind it, and Google
-routinely CAPTCHA-blocks requests coming from datacenter/CI IPs - including
-GitHub-hosted runners - which makes an unconfigured scheduled run fairly
-likely to fail. To make it reliable:
+This uses ORCID's public API for the list of works, and Crossref's public
+API (looked up by DOI) to fill in authors, journal and abstract. Both are
+official, key-free REST APIs, so - unlike the Google Scholar scraper this
+replaced - there's no CAPTCHA/blocking risk running it on a schedule.
 
-- Sign up for a free [ScraperAPI](https://www.scraperapi.com/) account
-  (free tier is enough for a weekly check) and add its API key as a
-  repository secret named `SCRAPERAPI_KEY`. The workflow will then route
-  requests through it automatically.
-- Without that secret, the script falls back to `scholarly`'s free public
-  proxy pool, which is best-effort and can still get blocked.
+See `scripts/orcid_sync.py` for details, including how to point it at a
+different `--orcid-id`.
 
-If a run still fails, re-run it later or trigger it manually via
-`workflow_dispatch`. See `scripts/scholar_sync.py` for details, including
-how to point it at a different `--scholar-id`.
+(An earlier version of this tool scraped Google Scholar instead, using the
+`scholarly` package - it worked but was unreliable on CI due to Google
+blocking requests from GitHub's IP ranges. ORCID was switched to because
+it's kept up to date directly and has an official API.)
 
 ## License
 
