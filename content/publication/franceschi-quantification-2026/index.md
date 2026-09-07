@@ -20,8 +20,8 @@ url_pdf: https://doi.org/10.1080/24748668.2026.2685437
 doi: https://doi.org/10.1080/24748668.2026.2685437
 tags:
 - Training Load
-- Needs review
+- Football
 projects:
 - training_load
-draft: true
+draft: false
 ---
