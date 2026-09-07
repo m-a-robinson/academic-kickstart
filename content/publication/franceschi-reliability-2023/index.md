@@ -48,8 +48,9 @@ url_pdf: https://doi.org/10.3389/fspor.2023.1173621
 doi: https://doi.org/10.3389/fspor.2023.1173621
 tags:
 - Methods
-- Needs review
+- Training Load
+- Football
 projects:
-- methods
-draft: true
+- training_load
+draft: false
 ---
