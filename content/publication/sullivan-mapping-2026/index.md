@@ -14,7 +14,10 @@ publication: Football Studies
 url_pdf: https://doi.org/10.1016/j.footst.2026.100043
 doi: https://doi.org/10.1016/j.footst.2026.100043
 tags:
-- Needs review
-projects: []
+- Training Load
+- Adaptation
+- Football
+projects:
+- training_load
 draft: true
 ---
