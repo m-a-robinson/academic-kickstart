@@ -1,0 +1,15 @@
+# Publications intentionally excluded from ORCID sync suggestions.
+#
+# orcid_sync.py checks this file before proposing a "new" publication, so
+# anything listed here (by title and/or doi) will never be suggested again.
+#
+# This is populated automatically when a "New publications from ORCID" pull
+# request is closed WITHOUT being merged (see
+# .github/workflows/orcid-sync-reject.yml) - closing such a PR is how you
+# reject a suggestion. You can also add an entry by hand here to pre-emptively
+# exclude something that hasn't been suggested yet.
+#
+# Example entry:
+#   - title: "Some paper title I don't want on the site"
+#     doi: "10.1000/example.doi"
+ignored: []

@@ -93,6 +93,35 @@ replaced - there's no CAPTCHA/blocking risk running it on a schedule.
 See `scripts/orcid_sync.py` for details, including how to point it at a
 different `--orcid-id`.
 
+### Avoiding duplicates
+
+A publication is skipped as already-present if either:
+
+- its DOI matches an existing `content/publication/*/index.md` (or an
+  entry in the ignore list, below), or
+- its title is a close (fuzzy) match to an existing one - not just an
+  exact string match, since ORCID/Crossref titles rarely match a
+  hand-written repo entry byte-for-byte (punctuation, ampersands, quote
+  styles, etc.). Many older ORCID entries also have no DOI at all, so this
+  title check is often the only signal available.
+
+If a run's log shows "Skipped N work(s) as likely-duplicates", that's this
+check working - not a bug.
+
+### Rejecting a suggested publication
+
+**To reject a suggestion so it's never proposed again: close its pull
+request without merging it.** On the PR page, use the **Close pull
+request** button near the bottom (or `gh pr close <number>` from the CLI).
+Closing (not merging) a "New publications from ORCID" PR triggers
+`.github/workflows/orcid-sync-reject.yml`, which records that
+publication's title/DOI in `scripts/orcid_ignore.yml` and commits that
+straight to `master` - future runs will then skip it automatically.
+
+You can also pre-emptively exclude something that hasn't been suggested
+yet by adding an entry to `scripts/orcid_ignore.yml` by hand, following
+the format shown in that file's comments.
+
 (An earlier version of this tool scraped Google Scholar instead, using the
 `scholarly` package - it worked but was unreliable on CI due to Google
 blocking requests from GitHub's IP ranges. ORCID was switched to because

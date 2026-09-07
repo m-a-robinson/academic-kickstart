@@ -1,0 +1,54 @@
+name: Record rejected ORCID suggestions
+
+# When a "New publications from ORCID" pull request (opened by
+# orcid-sync.yml) is closed WITHOUT being merged, treat that as a
+# rejection: record the title/DOI of each publication it proposed in
+# scripts/orcid_ignore.yml, so orcid_sync.py never suggests the same paper
+# again. This is how you "reject" a suggested publication - just close the
+# PR (don't merge it).
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  record-rejection:
+    if: >
+      github.event.pull_request.merged == false &&
+      startsWith(github.event.pull_request.head.ref, 'orcid-sync/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Record declined publications
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/orcid_record_rejection.py \
+            --repo "${{ github.repository }}" \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --head-sha "${{ github.event.pull_request.head.sha }}"
+
+      - name: Commit ignore list update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/orcid_ignore.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Record ORCID suggestion(s) declined via PR #${{ github.event.pull_request.number }}"
+            git push origin HEAD:master
+          fi

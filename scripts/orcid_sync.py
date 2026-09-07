@@ -23,6 +23,7 @@ import argparse
 import re
 import sys
 import time
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import requests
@@ -30,10 +31,18 @@ import yaml
 
 DEFAULT_ORCID_ID = "0000-0002-5627-492X"  # Mark A Robinson - ORCID iD
 PUBLICATION_DIR = Path(__file__).resolve().parent.parent / "content" / "publication"
+IGNORE_FILE = Path(__file__).resolve().parent / "orcid_ignore.yml"
 
 ORCID_API = "https://pub.orcid.org/v3.0"
 CROSSREF_API = "https://api.crossref.org/works"
 USER_AGENT = "academic-kickstart-orcid-sync/1.0 (+https://github.com/m-a-robinson/academic-kickstart)"
+
+# Many ORCID work records (especially older/imported ones) have no DOI
+# attached, so title comparison is often the only way to spot a duplicate.
+# Titles rarely match byte-for-byte between ORCID/Crossref and the
+# hand-written repo copy (quote styles, ampersands, subtitles, stray
+# whitespace), so use fuzzy similarity rather than exact string equality.
+TITLE_SIMILARITY_THRESHOLD = 0.90
 
 
 def normalise_title(title: str) -> str:
@@ -51,9 +60,9 @@ def slugify(text: str) -> str:
     return re.sub(r"-{2,}", "-", text)
 
 
-def load_existing_publications() -> tuple[set[str], set[str]]:
+def load_existing_publications() -> tuple[list[str], set[str]]:
     """Return (normalised titles, normalised DOIs) already in content/publication/."""
-    titles = set()
+    titles = []
     dois = set()
     for index_file in PUBLICATION_DIR.glob("*/index.md"):
         text = index_file.read_text(encoding="utf-8")
@@ -66,11 +75,33 @@ def load_existing_publications() -> tuple[set[str], set[str]]:
             continue
         title = front_matter.get("title")
         if title:
-            titles.add(normalise_title(title))
+            titles.append(normalise_title(title))
         doi = front_matter.get("doi")
         if doi:
             dois.add(normalise_doi(doi))
     return titles, dois
+
+
+def load_ignore_list() -> tuple[list[str], set[str]]:
+    """Return (normalised titles, normalised DOIs) explicitly declined before.
+
+    Populated either by hand (add a `- title: "..."` / `- doi: "..."` entry
+    to scripts/orcid_ignore.yml) or automatically when a "New publications
+    from ORCID" pull request is closed without merging - see
+    .github/workflows/orcid-sync-reject.yml.
+    """
+    if not IGNORE_FILE.exists():
+        return [], set()
+    data = yaml.safe_load(IGNORE_FILE.read_text(encoding="utf-8")) or {}
+    entries = data.get("ignored") or []
+    titles = [normalise_title(e["title"]) for e in entries if e.get("title")]
+    dois = {normalise_doi(e["doi"]) for e in entries if e.get("doi")}
+    return titles, dois
+
+
+def is_similar_title(title: str, others: list[str], threshold: float = TITLE_SIMILARITY_THRESHOLD) -> bool:
+    """Fuzzy-match a normalised title against a list of other normalised titles."""
+    return any(SequenceMatcher(None, title, other).ratio() >= threshold for other in others)
 
 
 def existing_slugs() -> set[str]:
@@ -231,16 +262,21 @@ def main() -> int:
     print(f"Found {len(works)} works on ORCID record.")
 
     known_titles, known_dois = load_existing_publications()
+    ignored_titles, ignored_dois = load_ignore_list()
+    all_known_titles = known_titles + ignored_titles
+    all_known_dois = known_dois | ignored_dois
     taken_slugs = existing_slugs()
 
     added = []
+    skipped_similar = []
     for work in works:
         title = work["title"]
         doi = normalise_doi(work["doi"]) if work.get("doi") else None
 
-        if doi and doi in known_dois:
+        if doi and doi in all_known_dois:
             continue
-        if normalise_title(title) in known_titles:
+        if is_similar_title(normalise_title(title), all_known_titles):
+            skipped_similar.append(title)
             continue
 
         crossref = None
@@ -259,8 +295,13 @@ def main() -> int:
         added.append((slug, front_matter["title"]))
         print(f"  + {index_file}")
 
+    if skipped_similar:
+        print(f"\nSkipped {len(skipped_similar)} work(s) as likely-duplicates of existing/ignored entries:")
+        for title in skipped_similar:
+            print(f"  - {title}")
+
     if not added:
-        print("No new publications found - repository is up to date with ORCID.")
+        print("\nNo new publications found - repository is up to date with ORCID.")
         return 0
 
     print(f"\nAdded {len(added)} new publication(s), all marked draft: true for review:")
