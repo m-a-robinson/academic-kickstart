@@ -28,13 +28,13 @@ interests:
 education:
   courses:
   - course: PhD in Biomechanics
-    institution: Liverpool John Moores University University
+    institution: Liverpool John Moores University
     year: 2011
   - course: MSc in Sport & Exercise Biomechanics
-    institution: Liverpool John Moores University University
+    institution: Liverpool John Moores University
     year: 2004
   - course: BSc in Sport & Exercise Science
-    institution: Liverpool John Moores University University
+    institution: Liverpool John Moores University
     year: 2003
 
 # Social/Academic Networking
