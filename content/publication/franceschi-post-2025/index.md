@@ -13,7 +13,7 @@ authors:
 - Kevin Enright
 publication_types:
 - '2'
-abstract: ABSTRACTThis study described the recovery responses following match play
+abstract: This study described the recovery responses following match play
   and examined the effects of manipulating training load 48 h post‐match in Italian
   Serie A youth soccer players. Forty‐eight players were assessed using the countermovement
   jump (CMJ), isometric posterior‐chain muscle test (IPC), muscle soreness and fatigue
@@ -38,8 +38,9 @@ url_pdf: https://doi.org/10.1002/ejsc.12297
 doi: https://doi.org/10.1002/ejsc.12297
 tags:
 - Training Load
-- Needs review
+- Recovery
+- Football
 projects:
 - training_load
-draft: true
+draft: false
 ---
