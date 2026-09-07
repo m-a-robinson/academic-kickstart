@@ -14,8 +14,14 @@ nothing goes live automatically - they're intended to be checked (venue,
 tags, project, publication type) and then flipped to `draft: false` before
 merging.
 
+By default only works published in the last few years are considered (see
+DEFAULT_YEARS_BACK) - older ORCID entries are far more likely to already be
+on the site under a slightly different title, and are lower-value to add
+retroactively. Use --all-years to see the full ORCID history instead.
+
 Usage:
     python scripts/orcid_sync.py [--orcid-id ID] [--dry-run]
+                                  [--min-year YEAR | --all-years]
 """
 from __future__ import annotations
 
@@ -23,6 +29,7 @@ import argparse
 import re
 import sys
 import time
+from datetime import date
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -99,9 +106,57 @@ def load_ignore_list() -> tuple[list[str], set[str]]:
     return titles, dois
 
 
+def titles_match(a: str, b: str, threshold: float = TITLE_SIMILARITY_THRESHOLD) -> bool:
+    """True if two normalised titles are close enough to be the same paper.
+
+    Two checks, either of which is sufficient:
+      - overall similarity ratio (catches punctuation/wording differences)
+      - containment: the shorter title is almost entirely a contiguous
+        substring of the longer one (catches ORCID/Crossref dropping a
+        subtitle, e.g. "...gait" vs "...gait suitable for use in real-time
+        visual feedback applications" - a whole-string ratio would score
+        that low despite it being the same paper).
+    """
+    # autojunk=False: SequenceMatcher's default autojunk heuristic treats a
+    # character as "popular" (and excludes it from matches) once it makes up
+    # too much of a long sequence - which silently breaks contiguous-match
+    # detection on titles over ~200 characters (common characters like
+    # spaces get marked junk). Titles are short enough that disabling it
+    # costs nothing.
+    matcher = SequenceMatcher(None, a, b, autojunk=False)
+    if matcher.ratio() >= threshold:
+        return True
+    shorter_len = min(len(a), len(b))
+    if not shorter_len:
+        return False
+    longest_match = matcher.find_longest_match(0, len(a), 0, len(b))
+    return (longest_match.size / shorter_len) >= threshold
+
+
 def is_similar_title(title: str, others: list[str], threshold: float = TITLE_SIMILARITY_THRESHOLD) -> bool:
     """Fuzzy-match a normalised title against a list of other normalised titles."""
-    return any(SequenceMatcher(None, title, other).ratio() >= threshold for other in others)
+    return any(titles_match(title, other, threshold) for other in others)
+
+
+def dedupe_works(works: list[dict]) -> list[dict]:
+    """Collapse works that are the same paper appearing under multiple ORCID
+    source records (common: near-identical title, or the same DOI, listed
+    twice with minor formatting differences)."""
+    kept: list[dict] = []
+    kept_titles: list[str] = []
+    kept_dois: set[str] = set()
+    for work in works:
+        doi = normalise_doi(work["doi"]) if work.get("doi") else None
+        norm_title = normalise_title(work["title"])
+        if doi and doi in kept_dois:
+            continue
+        if is_similar_title(norm_title, kept_titles):
+            continue
+        kept.append(work)
+        kept_titles.append(norm_title)
+        if doi:
+            kept_dois.add(doi)
+    return kept
 
 
 def existing_slugs() -> set[str]:
@@ -244,11 +299,29 @@ def write_publication(slug: str, front_matter: dict, dry_run: bool) -> Path:
     return index_file
 
 
+DEFAULT_YEARS_BACK = 5
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--orcid-id", default=DEFAULT_ORCID_ID, help="ORCID iD, e.g. 0000-0002-5627-492X")
     parser.add_argument("--dry-run", action="store_true", help="Print what would be created without writing files")
+    parser.add_argument(
+        "--min-year", type=int, default=None,
+        help=f"Only propose works published in this year or later (default: current year - {DEFAULT_YEARS_BACK})",
+    )
+    parser.add_argument(
+        "--all-years", action="store_true",
+        help="Disable the year cutoff entirely and consider the full ORCID history",
+    )
     args = parser.parse_args()
+
+    if args.all_years:
+        min_year = None
+    elif args.min_year is not None:
+        min_year = args.min_year
+    else:
+        min_year = date.today().year - DEFAULT_YEARS_BACK
 
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
@@ -260,6 +333,16 @@ def main() -> int:
         print(f"Failed to fetch ORCID profile: {exc!r}", file=sys.stderr)
         return 1
     print(f"Found {len(works)} works on ORCID record.")
+
+    if min_year is not None:
+        before = len(works)
+        # A work with no resolvable year can't be confirmed recent, so it's
+        # excluded along with everything older than the cutoff.
+        works = [w for w in works if w.get("year") and int(w["year"]) >= min_year]
+        print(f"Restricting to {min_year} onwards: {before} -> {len(works)} works.")
+
+    works = dedupe_works(works)
+    print(f"After removing same-paper duplicates within the ORCID record: {len(works)} works.")
 
     known_titles, known_dois = load_existing_publications()
     ignored_titles, ignored_dois = load_ignore_list()
