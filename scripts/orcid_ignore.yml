@@ -1,15 +1,79 @@
-# Publications intentionally excluded from ORCID sync suggestions.
-#
-# orcid_sync.py checks this file before proposing a "new" publication, so
-# anything listed here (by title and/or doi) will never be suggested again.
-#
-# This is populated automatically when a "New publications from ORCID" pull
-# request is closed WITHOUT being merged (see
-# .github/workflows/orcid-sync-reject.yml) - closing such a PR is how you
-# reject a suggestion. You can also add an entry by hand here to pre-emptively
-# exclude something that hasn't been suggested yet.
-#
-# Example entry:
-#   - title: "Some paper title I don't want on the site"
-#     doi: "10.1000/example.doi"
-ignored: []
+ignored:
+- title: The effects of tight or loose-fitting clothing on markerless gait kinematics
+    in adults
+  doi: https://doi.org/10.1016/j.gaitpost.2023.07.021
+- title: The inter-trial and inter-session reliability of Theia3D-derived markerless
+    gait analysis in tight versus loose clothing
+  doi: https://doi.org/10.7717/peerj.18613
+- title: The Movement Deviation Profile gives a speed-matched measure of gait deviation
+  doi: https://doi.org/10.1016/j.gaitpost.2024.07.032
+- title: How many strides are needed for reliable markerless gait analysis?
+  doi: https://doi.org/10.1016/j.gaitpost.2025.110020
+- title: 'Post‐Match Recovery Responses in Italian Serie A Youth Soccer Players: Effects
+    of Manipulating Training Load 48 h After Match Play'
+  doi: https://doi.org/10.1002/ejsc.12297
+- title: 'Quantification of training and match load during non-congested and congested
+    microcycles in academy football players: a UEFA Youth League team case study'
+  doi: https://doi.org/10.1080/24748668.2026.2685437
+- title: Reliability and sensitivity to change of post-match physical performance
+    measures in elite youth soccer players
+  doi: https://doi.org/10.3389/fspor.2023.1173621
+- title: Training loads and microcycle periodisation in Italian Serie A youth soccer
+    players
+  doi: https://doi.org/10.1080/02640414.2024.2391648
+- title: Comparison of Marker- and Markerless-Derived Lower Body Three-Dimensional
+    Gait Kinematics in Typically Developing Children
+  doi: https://doi.org/10.3390/s25144249
+- title: 'Hamstrings and Quadriceps Weaknesses following Anterior Cruciate Ligament
+    Reconstruction persist up to 6 Months after Return-to-sport: an Angle-specific
+    Strength Analysis'
+  doi: https://doi.org/10.26603/001c.128505
+- title: Changes in trunk and lower body gait kinematics in children following a Theia3D
+    update
+  doi: https://doi.org/10.1016/j.gaitpost.2024.07.127
+- title: Comparison of Theia3D and the conventional gait model in typically developing
+    children and adults in a clinical gait laboratory
+  doi: https://doi.org/10.1016/j.jbiomech.2025.112995
+- title: A novel method to assist clinical management decisions following mTBI using
+    wearable sensors and machine learning
+  doi: https://doi.org/10.1016/j.jsams.2021.11.017
+- title: 'Change of Direction Density: A Novel Consideration of Consecutive Changes
+    of Direction in Elite Youth Soccer'
+  doi: https://doi.org/10.1519/JSC.0000000000005145
+- title: Concurrent validity and between-unit reliability of a foot-mounted inertial
+    measurement unit to measure velocity during team sport activity
+  doi: https://doi.org/10.1080/24733938.2023.2237493
+- title: Biomechanical assessments
+  doi: https://doi.org/10.4324/9781003148418-18
+- title: 'Differences of Knee Flexion Angle at Landing Between Dynamic Tasks: Implication
+    Towards ACL Injury Screening in Females'
+  doi: https://doi.org/10.1007/978-981-99-2162-1_19
+- title: 'Mapping Adaptive Processes in Football: A Scoping Review of Research Approaches'
+  doi: https://doi.org/10.1016/j.footst.2026.100043
+- title: 'Knee abduction moment waveforms and effect sizes during sidestepping interventions:
+    A critical perspective to inform adequately powered future studies'
+  doi: https://doi.org/10.1016/j.jbiomech.2025.112896
+- title: Hamstring Muscle Strength Assessment and the Association with Injury Risk
+    in Gaelic Football
+  doi: https://doi.org/10.24377/LJMU.t.00018549
+- title: The reliability and sensitivity of post-match neuromuscular measures in elite
+    youth soccer players
+- title: Training loads in congested and non-congested microcycles in elite youth
+    soccer players
+- title: Training load, fatigue and post-match recovery in Italian Serie A youth soccer
+    players
+  doi: https://doi.org/10.24377/LJMU.t.00027752
+- title: Forces experienced at different levels of the musculoskeletal system during
+    horizontal decelerations
+  doi: https://doi.org/10.1080/02640414.2024.2428086
+- title: Jumping towards field-based ground reaction force estimation and assessment
+    with OpenCap
+  doi: https://doi.org/10.1016/j.jbiomech.2024.112044
+- title: The effect of camera configuration on multi-camera markerless motion capture
+    for biomechanical analysis
+  doi: https://doi.org/10.1016/j.jbiomech.2026.113522
+- title: Sports medicine and biomechanics–synergies and nuances
+  doi: https://doi.org/10.1080/02640414.2022.2040885
+- title: Inter-session reliability of markerless lower extremity joint kinematics
+    and kinetics for return-to-sport screening tasks
+  doi: https://doi.org/10.1080/02640414.2025.2541490
