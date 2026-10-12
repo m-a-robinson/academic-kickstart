@@ -37,7 +37,10 @@ publication: Biomechanics
 url_pdf: https://doi.org/10.3390/biomechanics6030076
 doi: https://doi.org/10.3390/biomechanics6030076
 tags:
-- Needs review
-projects: []
-draft: true
+- Ankle instability
+- EMG
+- Hopping
+projects:
+- clinical
+draft: false
 ---
