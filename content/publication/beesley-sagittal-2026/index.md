@@ -13,13 +13,12 @@ publication_types:
 - '2'
 abstract: ''
 featured: false
-publication: Gait &amp; Posture
+publication: Gait and Posture
 url_pdf: https://doi.org/10.1016/j.gaitpost.2026.110319
 doi: https://doi.org/10.1016/j.gaitpost.2026.110319
 tags:
 - Markerless
-- Needs review
 projects:
 - markerless
-draft: true
+draft: false
 ---
