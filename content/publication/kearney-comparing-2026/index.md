@@ -19,8 +19,8 @@ url_pdf: https://doi.org/10.1016/j.jbiomech.2026.113639
 doi: https://doi.org/10.1016/j.jbiomech.2026.113639
 tags:
 - Markerless
-- Needs review
+- Gait
 projects:
 - markerless
-draft: true
+draft: false
 ---
